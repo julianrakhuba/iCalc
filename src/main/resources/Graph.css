@@ -1,0 +1,1434 @@
+
+* {
+	-fx-baseTESTVARIABLE: #e00;
+}
+.test123 {
+	-fx-background-color: -fx-baseTESTVARIABLE;
+}
+
+.dotedLine {
+	-fx-fill: transparent;
+	-fx-stroke: #d4d4d4;
+	-fx-stroke-width: 0.75;
+	-fx-stroke-line-cap: butt;
+	-fx-stroke-dash-array: 10 5;
+}
+
+.darkDotedLine {
+	-fx-fill: transparent;
+	-fx-stroke: rgba(159, 165, 169, 0.50);
+	-fx-stroke-width: 1;
+	-fx-stroke-line-cap: butt;
+	-fx-stroke-dash-array: 10 5;
+}
+
+.dotedDLine {
+	-fx-fill: transparent;
+	-fx-stroke: orange;
+	-fx-stroke-width: 1;
+	-fx-stroke-line-cap: butt;
+	-fx-stroke-dash-array: 3 3;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
+}
+
+.custFiedsBututon {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 15 2 2 15;
+	-fx-background-radius: 15 2 2 15;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+.layTestBtn {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 15 15 15 15;
+	-fx-background-radius: 15 15 15 15;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+/* Identifier  •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.indicatorBlue {
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+	-fx-padding: 1 2 1 2;
+	-fx-opacity: 1;
+}
+
+.indicatorGreen {
+	-fx-background-color: linear-gradient(#ffffff, #7fff7f), radial-gradient(center 50% -40%, radius 200%, #00fa00 45%, #00fa00 50%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+	-fx-padding: 1 2 1 2;
+	-fx-opacity: 1;
+}
+
+.indicatorRed {
+	-fx-background-color: linear-gradient(#ffebeb, #ff6161), radial-gradient(center 50% -40%, radius 200%, #ffc7c7 45%, #ff3d3d 50%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+	-fx-padding: 1 2 1 2;
+	-fx-opacity: 1;
+}
+
+.indicatorOrange {
+	-fx-background-color: linear-gradient(#ff7d32, #ff7d32), radial-gradient(center 50% -40%, radius 200%, #ff7d32 45%, #ff7d32 50%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+	-fx-padding: 1 2 1 2;
+	-fx-opacity: 1;
+}
+
+/* SearchCON •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.layInFunction {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 0 0 0 0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.3, 0, 0);
+	-fx-opacity: 1;
+	-fx-min-width: 15;
+	-fx-min-height: 15;
+	-fx-max-width: 15;
+	-fx-max-height: 15;
+}
+
+.cusrsorElmFocused {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-padding: 0 0 0 0;
+	-fx-opacity: 1;
+	-fx-min-height: 5;
+	-fx-min-width: 5;
+	-fx-max-height: 5;
+	-fx-max-width: 5;
+}
+
+.cusrsorElmUnfocused {
+	-fx-background-color: #fafafa;
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-padding: 0 0 0 0;
+	-fx-opacity: 1;
+	-fx-min-height: 5;
+	-fx-min-width: 5;
+	-fx-max-height: 5;
+	-fx-max-width: 5;
+}
+
+.inValues {
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.3, 0, 0);
+	-fx-opacity: 1;
+	-fx-text-fill: #708090;
+}
+
+
+.ACTIVE {
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-font-size: 10;
+}
+
+.UNACTIVE {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-font-size: 10;
+}
+
+#list-Item-Gray {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-font-size: 10;
+}
+
+#list-Item-Blue {
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-font-size: 10;
+}
+
+
+
+#value-selected {
+	-fx-background-color: #dbf1ff;
+}
+
+#value-unselected {
+	-fx-background-color: white;
+}
+
+
+/** LIST */
+.list {
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 15 15 15 15;
+	-fx-background-radius: 15 15 15 15;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-padding: 25 5 25 5 ;
+	-fx-opacity: 1;
+	-fx-font-size: 10;
+}
+
+/* Nnode •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.toNnode {
+	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 10, 0.5, 0, 0);
+}
+
+.unpopulatedNnode {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 4 4 4 4;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+.externaNnodes {
+	-fx-border-color: gray;
+	-fx-border-style: dashed;
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 2 2 2 2;
+}
+
+.unpopulatedNnodeWithSchemaJoins {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 4 4 4 4;
+	-fx-effect: dropshadow(three-pass-box, #145861, 5, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+.configNnode {
+	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50% -40%, radius 200%, #ffefad 45%, #ffcf0f 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 4 4 4 4;
+	-fx-effect: dropshadow(three-pass-box, orange, 5, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+
+
+
+.externaljoinsOut {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 1, 0.2, 0, 0);
+	-fx-opacity: 0.9;
+}
+
+.externalNnode {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-opacity: 0.9;
+}
+
+.externalLaySQL {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-opacity: 0.9;
+}
+
+.externalLaySQLJ {
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
+	-fx-opacity: 0.9;
+}
+
+.externalLaySQLD {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #f7f7f7 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-opacity: 0.9;
+}
+
+.derivedjoins {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 9 9 9 9;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3.5 3.5 3.5 3.5 ;
+	-fx-effect: dropshadow(three-pass-box, rgba(255, 115, 97, 0.7), 1, 0.2, 0, 0);
+	-fx-opacity: 0.9;
+}
+
+
+/* LOGIC  •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+ * -fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 2, 0.2, 0, 0);*/
+.darklogic {
+	-fx-border-style: segments(10, 1, 10, 1);
+	-fx-border-width: 2 ;
+	-fx-border-color: white;
+	-fx-background-color: transparent;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+	-fx-padding: 2;
+	-fx-effect: dropshadow(gaussian, derive(#1E90FF, 20%) , 5, 0.1, 0.0, 0.0);
+}
+
+.logic {
+	-fx-border-style: segments(10, 1, 10, 1);
+	-fx-border-width: 2 ;
+	-fx-border-color: white;
+	-fx-background-color: transparent;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+	-fx-padding: 2;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+.Open {
+	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-padding: 5 5 5 5;
+}
+
+.Closed {
+	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #a8deff 45%, #75caff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-padding: 5 5 5 5;
+}
+
+.Down {
+	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-padding: 5 5 5 5;
+}
+
+.OpenArc {
+	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, derive(#dbf1ff, 50.0%) 45%, derive(#ade0ff, 50.0%) 50%); 
+	-fx-stroke-width: 6px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+.ClosedArc {
+	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #a8deff 45%, #75caff 50%); 
+	-fx-stroke-width: 6px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+.DownArc {
+	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%); 
+	-fx-stroke-width: 6px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+.DownArcBackUp {
+	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%); 
+	-fx-stroke-width: 6px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+.grayMenuSelector {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 5 5;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+.blueMenuSelector {
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 5 5;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+/* JoinCON */
+
+.joinBase {
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 5 5;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+.joinBaseChild {
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 5 5;
+	-fx-effect: dropshadow(three-pass-box, white, 3, 0.4, 0, 0);
+	-fx-opacity: 1;
+}
+
+.SQLJ_JOIN {
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+}
+
+.SQLJ_LEFT {
+	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50% -40%, radius 200%, #efedf7 45%, #ebe5ff 50%);
+}
+
+.SQLJ_RIGHT {
+	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50% -40%, radius 200%, #ffe5f2 45%, #ffd6eb 50%);
+}
+
+.SQL_SHIFT {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+}
+
+.SQLJ_SHIFT {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+}
+
+
+.SQL_JOIN {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+}
+
+
+
+.SQLD_JOIN {
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+}
+
+.SQLD_LEFT {
+	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50% -40%, radius 200%, #efedf7 45%, #ebe5ff 50%);
+}
+
+.SQLD_RIGHT {
+	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50% -40%, radius 200%, #ffe5f2 45%, #ffd6eb 50%);
+}
+
+.SQLD_SHIFT {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+}
+
+
+/* SEARCH BAR  #145861 #489df2 •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/*	-fx-background-color: radial-gradient(center 50% 30%, radius 150%, #145861 30%, #242424 60%);
+-fx-background-position: center center; */
+.newSearchBar {
+	-fx-background-image: url("back.jpg");
+	-fx-padding: 15 0 15 0;
+}
+
+
+/*
+.funcBututon {
+-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+-fx-border-radius: 15 2 2 15;
+-fx-background-radius: 15 2 2 15;
+-fx-background-insets: 0, 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+-fx-opacity: 1;
+}
+
+
+.cancelButton {
+-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+-fx-border-radius: 2 15 15 2;
+-fx-background-radius: 2 15 15 2;
+-fx-background-insets: 0, 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+-fx-opacity: 1;
+}
+ 
+
+.sqlBtn {
+-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+-fx-border-radius: 2 2 2 2;
+-fx-background-radius: 2 2 2 2;
+-fx-padding: 4.5 4.5 4.5 4.5;
+-fx-background-insets: 0, 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+-fx-opacity: 1;
+}
+
+.sqljBtn {
+-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+-fx-border-radius: 2 2 2 2;
+-fx-background-radius: 2 2 2 2;
+-fx-padding: 4.5 4.5 4.5 4.5;
+-fx-background-insets: 0, 1;
+-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+-fx-opacity: 1;
+}
+*/
+/*SQL Buttons */
+.SQLbtn {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-border-radius: 15 3 3 15;
+	-fx-background-radius: 15 3 3 15;
+	-fx-padding: 4.5 4.5 4.5 4.5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-border-width: 0.5 ;
+	-fx-border-color: #b9baba;
+}
+
+.SQLJbtn {
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+	-fx-border-radius: 15 3 3 15;
+	-fx-background-radius: 15 3 3 15;
+	-fx-padding: 4.5 4.5 4.5 4.5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-border-width: 0.5 ;
+	-fx-border-color: #b9baba;
+}
+
+.SQLJDbtn {
+	-fx-background-color: linear-gradient(#f3f9e0, #d4f963), radial-gradient(center 50% -40%, radius 200%, #edf9c7 45%, #daf97c 50%);
+	-fx-border-radius: 15 3 3 15;
+	-fx-background-radius: 15 3 3 15;
+	-fx-padding: 4.5 4.5 4.5 4.5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+	-fx-border-width: 0.5 ;
+	-fx-border-color: #b9baba;
+}
+
+
+
+.testBtn {
+	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50% -40%, radius 200%, #ffefad 45%, #ffcf0f 50%);
+	-fx-border-radius: 2 2 2 2;
+	-fx-background-radius: 2 2 2 2;
+	-fx-padding: 4.5 4.5 4.5 4.5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
+	-fx-opacity: 1;
+}
+
+
+
+
+/*
+.search-context .custom-menu-item:focused {
+	-fx-background-color: red;
+}
+
+.search-context .custom-menu-item:focused .label {
+	-fx-text-fill: black;
+}
+
+
+
+* .context-menu {
+-fx-background-color: transparent;
+}
+
+.menu-item {
+-fx-background-color: transparent;
+}
+* 
+* 
+* .context-menu {
+-fx-background-color: rgba(240,240,245, 0.7);
+}
+*/
+
+
+
+
+/* SPLIT PANE
+.split-pane:horizontal > .split-pane-divider {
+-fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+-fx-background-color: transparent;
+}
+.split-pane > .split-pane-divider {
+-fx-padding: 1 1 1 1;
+}
+*/
+.split-pane > .split-pane-divider {
+	-fx-background-color: transparent; /*   #ade0ff Set the background color of the separator */
+	-fx-background-insets: 0; /* Remove any padding around the separator */
+	-fx-padding: 0; /* Remove any padding inside the separator */
+}
+
+
+
+/* 
+.combo-box1 .arrow-button {
+-fx-opacity: 0.0;
+-fx-cursor: text;
+}
+*/
+
+
+
+
+
+.newList {
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
+	-fx-border-radius: 10 10  2 2;
+	-fx-background-radius: 10 10  10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 20 5;
+	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 2, 0.2, 0, 0);
+	-fx-opacity: 0.9;
+}
+
+
+/*
+*.accordion-item-content {
+transition-duration: 0s;
+}
+*/
+
+.connectionLightBlue {
+	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50% -40%, radius 200%, #61c2ff 45%, #61c2ff 50%);
+	-fx-border-radius: 15 15 15 15;
+	-fx-background-radius: 15 15 15 15;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3;
+	-fx-opacity: 1;
+	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2, 0.2, 0, 0);
+	-fx-min-height: 25;
+	-fx-max-height: 25;
+}
+
+.connectionLightOrange {
+	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50% -40%, radius 200%, #ff7d32 45%, #ff7d32 50%);
+	-fx-border-radius: 15 15 15 15;
+	-fx-background-radius: 15 15 15 15;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 3;
+	-fx-opacity: 1;
+	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2, 0.2, 0, 0);
+	-fx-min-height: 25;
+	-fx-max-height: 25;
+}
+
+
+
+
+.upperLabel {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #d6f1ff 50%);
+	-fx-border-radius: 1 1 1 1;
+	-fx-background-radius: 1 1 1 1;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 5 5 5 5;
+	-fx-opacity: 1;
+}
+
+.titled-pane > .title {
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #d6f1ff 50%);
+	-fx-background-insets: 0, 1, 2;
+	-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+	-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+
+
+/* LAY  ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.layBase {
+	-fx-border-radius: 10 10 10 10;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 0, 1;
+	-fx-padding: 4 4 1 4;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
+	-fx-opacity: 1;	
+}
+
+/* 	EDIT, VIEW, FORMULA, SQL,SQLJ, SQLD, SQLSELECTED, SQLJSELECTED,  SQLDSELECTED   #ff99cc 
+
+.EDIT {
+-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50% -40%, radius 200%, #ffe5f2 45%, #ff99cc 50%);
+}
+
+.VIEW {
+-fx-background-color: linear-gradient(#ffffff, #8ccf8c), radial-gradient(center 50% -40%, radius 200%, #d1ffd1 45%, #7fff7f 50%);
+}
+
+.FORMULA {
+-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50% -40%, radius 200%, #ffefad 45%, #ffcf0f 50%);
+}
+
+.SQL {
+-fx-background-color: linear-gradient(#e0f1f9, #63c7f9), radial-gradient(center 50% -40%, radius 200%, #c7e9f9 45%, #7cd0f9 50%);
+}
+
+.SQLSELECTED {
+-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+}
+
+.SQLJ {
+-fx-background-color: linear-gradient(#e0edf9, #63aef9), radial-gradient(center 50% -40%, radius 200%, #c7e0f9 45%, #7cbbf9 50%);
+}
+
+.SQLJSELECTED {
+-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+}
+
+.SQLD {
+-fx-background-color: linear-gradient(#ffcc85, #ee9017), radial-gradient(center 50% -40%, radius 200%, #c7e0f9 45%, #7cbbf9 50%);
+}
+
+.SQLDSELECTED {
+-fx-background-color: linear-gradient(#ffddad, #ffa42e), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+}
+*/
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+.menu {
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+}
+
+.menu-item {
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+}
+
+.context-menu {
+	-fx-background-color: #fff;
+	-fx-opacity: 0.85;
+	-fx-border-radius: 3 3 3 3;
+	-fx-background-radius: 3 3 3 3;
+}
+
+.custom-menu-item {
+    /* Custom styles for the menu item 
+    -fx-background-color: green;
+    -fx-text-fill: red; */
+}
+
+/*
+.titled-pane > .title {
+-fx-pref-height: 30;
+}
+
+
+.menu .label {
+-fx-text-fill: gray;
+-fx-font-family: verdana;
+-fx-font-size: 11.5px;
+}
+
+.menu:hover,
+.menu:showing {
+-fx-background-color: #CCE8FF;
+-fx-text-fill: black;
+}
+
+.menu-item {
+-fx-background-color: #F2F2F2;
+-fx-text-fill: #000000;
+-fx-font-family: verdana;
+-fx-font-size: 11.4px;
+}
+
+.menu-item .label {
+-fx-text-fill: #000000;
+-fx-font-family: verdana;
+}
+
+.menu-item:focused .label {
+-fx-text-fill: #000000;
+-fx-font-family: verdana;
+}
+
+.menu-item:focused {
+-fx-background: -fx-accent;
+-fx-background-color: #91C9F7;
+-fx-text-fill: #000000;
+-fx-font-family: verdana;
+}
+
+.menu-item:disabled {
+-fx-background: -fx-accent;
+-fx-text-fill: #000000;
+-fx-opacity: 0.9;
+-fx-font-family: verdana;
+}
+
+.menu-item:focused:disabled {
+-fx-background: -fx-accent;
+-fx-background-color: lightgray;
+-fx-text-fill: #000000;
+-fx-font-family: verdana;
+-fx-opacity: 0.9;
+}
+
+
+.context-menu {
+-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+-fx-background-color: #006699;
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+-fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;
+-fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+}
+
+.context-menu .separator {
+-fx-padding: 0.0em 0.333333em 0.0em 0.333333em;
+}
+
+.context-menu .scroll-arrow {
+-fx-padding: 0.416667em 0.416667em 0.416667em 0.416667em;
+-fx-background-color: #006699;
+}
+
+.context-menu .scroll-arrow:hover {
+-fx-background: -fx-accent;
+-fx-background-color: #006699;
+-fx-text-fill: -fx-selection-bar-text;
+}
+
+.context-menu:show-mnemonics .mnemonic-underline {
+-fx-stroke: -fx-text-fill;
+}
+
+.list-cell {
+-fx-background-color: transparent;
+}
+.list-view {
+-fx-background-color: transparent;
+}
+
+
+*/
+ 
+/*
+1. Odd rows with white background color;#fcfcfc
+2. ListView: when mouse over an item, highlight with a blue shade;
+3. ListView: when an item is selected, paint it with a gradient;
+4. ListView: when focus is lost from ListView, selected item should be painted with gradient;
+5. ListView: all items will start with text-fill black. But on mouse over and/or selected it will change to white.
+*/
+
+.list-cell:selected .label {
+	-fx-text-fill: black;
+}
+
+.list-cell {
+	-fx-text-fill: black; /* 5 */
+	-fx-background-color: #fcfcfc; /* 1 */
+	-fx-border-color: white ;
+}
+.list-cell:odd {
+	-fx-background-color: #fcfcfc; /* 1 */
+}
+.list-cell:even {
+	-fx-background-color: #fcfcfc; /* for information */
+}
+
+.list-cell:odd:filled:hover {
+	-fx-background-color: #fcfcfc; /* 2 */
+	-fx-text-fill: black; /* 5 */
+}
+
+.list-cell:even:filled:hover {
+	-fx-background-color: #fcfcfc; /* 2 */
+	-fx-text-fill: black; /* 5 */
+}
+
+.list-cell:odd:filled:selected {
+	/* 4: (Styling when out of focus)*/
+	-fx-background-color: #fcfcfc;
+	-fx-text-fill: black;
+}
+.list-cell:even:filled:selected {
+	/* 4: (Styling when out of focus)*/
+	-fx-background-color: #fcfcfc;
+	-fx-text-fill: black;
+}
+
+.list-view:focused .list-cell:filled:selected {
+	/* 3: (This is more specific and therefore overrides the above)*/
+	-fx-background-color: #e5f6ff;
+}
+
+/*••••••••••••••••••••••••••••••••••• 
+.animated-gradient {
+-gradient-base: red ;
+-fx-text-fill: linear-gradient(to right, -gradient-base, black);
+}
+
+
+.list-view .scroll-pane {
+-fx-background-color: transparent;
+-fx-fill: transparent;
+}
+
+.list-view .scroll-bar .track {
+-fx-fill: transparent;
+}
+ 
+.list-view .scroll-bar:vertical {
+-fx-opacity: 0.2;
+}
+.list-view .scroll-pane .corner {
+-fx-background-color: transparent ;
+}
+
+.list-view .scroll-bar:horizontal {
+-fx-opacity: 0.5;
+}
+••••••••••••••••••••••••••••••••••• */
+
+.list-view {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #7cd0f9;
+}
+
+.text-input {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: #7cd0f9;
+}
+ 
+
+
+
+
+
+/* The main scrollbar **track** CSS class 
+* 
+*     -fx-focus-color: transparent;
+-fx-faint-focus-color: green;
+ 
+-fx-focus-color,
+-fx-control-inner-background,
+-fx-faint-focus-color,
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical {
+-fx-background-color: transparent;
+-fx-border-color: transparent;
+-fx-background-radius: 15em;
+-fx-border-radius: 15em;
+-fx-padding: -10;
+-fx-scale-x: 1;
+}
+*/
+
+
+.list-view .tab:selected .focus-indicator {
+	-fx-border-color: transparent;
+}
+
+
+.list-view .scroll-bar:vertical {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-padding: -5 -10 -5 -10;
+	-fx-pref-width: 0.5px;
+}
+
+.list-view .scroll-bar:horizontal {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-padding: -10 -5 -10, -5;
+	-fx-pref-height: 0.5px;
+}
+
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) 
+.list-view .scroll-bar:horizontal .thumb {
+-fx-background-color: transparent;
+-fx-background-insets: 2, 0, 0;
+-fx-background-radius: 8em;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+-fx-background-color: rgba(0,0,0,0.1);
+-fx-background-insets: 2, 0, 0;
+-fx-background-radius: 8em;
+}
+*/
+
+.list-view  .scroll-bar .increment-arrow,
+.list-view  .scroll-bar .decrement-arrow {
+	-fx-shape: "";
+	-fx-padding: 0;
+	-fx-scale-x: 0;
+	-fx-scale-y: 0;
+}
+
+
+
+
+/*******************************************************************************
+*                                                                             *
+* ScrollBar                                                                   *
+*                                                                             *
+******************************************************************************/
+/* SCROLL PANE #f5f5f5  #fcfcfc   -fx-effect: innershadow(one-pass-box, black, 1, 0.3, 0, 0);  #f5f5f5  
+*-fx-background-color: #f5f5f5, linear-gradient(from 0.0px 0.0px to 5.1px  0.0px, repeat, #ededed 5%, transparent 5%), linear-gradient(from 0.0px 0.0px to  0.0px 5.1px, repeat, #ededed 5%, transparent 5%);
+-fx-effect: innershadow(three-pass-box, black, 0.5, 0.3, 0, 0);
+*/  
+.scroll-pane .viewport {
+	-fx-background-color: rgba(0,0,0,0.0);
+}
+
+.scroll-pane:focused, .split-pane:focused {
+	-fx-background-insets: 0, 1; /* This prevents from changing size on activate pane  horizontal*/
+}
+
+
+
+.thumb {
+	-fx-background-color: rgba(0,0,0, 0.1);
+	-fx-background-radius: 8;
+	-fx-opacity: 0.8;
+}
+
+/* #7CD0F9     -fx-background-color: rgba(0,0,0,0.05);
+.thumb {
+-fx-background-color: derive(#7CD0F9, 50%);
+-fx-background-radius: 8;
+-fx-opacity: 0.8;
+}
+.scroll-pane > .scroll-bar:horizontal > .increment-button,
+.scroll-pane > .scroll-bar:horizontal > .decrement-button {
+-fx-background-color: transparent;
+}
+.scroll-pane > .scroll-bar:vertical > .increment-button,
+.scroll-pane > .scroll-bar:vertical > .decrement-button {
+-fx-background-color: transparent;
+}
+*/
+
+.scroll-bar > .increment-button > .increment-arrow {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar > .decrement-button > .decrement-arrow {
+	-fx-background-color: transparent;
+}
+
+
+.scroll-pane .scroll-bar:vertical {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-padding: -5 -10 -5 -10;
+	-fx-pref-width: 0.5px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-padding: -10 -5 -10, -5;
+	-fx-pref-height: 0.5px;
+}
+
+
+
+/*******************************************************************************
+*                                                                             *
+* TabPane                                                                     *
+*                                                                             *
+******************************************************************************/
+
+.jjj {
+    /* TODO should not be using text-box-border I think? */
+    -fx-background-color:
+        -fx-outer-border,
+        -fx-text-box-border,
+        linear-gradient(from 0px 0px to 0px 5px, -fx-text-box-border, derive(-fx-text-box-border, 30%));
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+	 /*  PLAIN
+	  * -fx-background-color: linear-gradient(from 0px 21px to 0px 25px, -fx-background, derive(-fx-background, -10%));
+	  * ORIGINAL BELLOW
+	  *     -fx-background,  -fx-text-box-border,  linear-gradient(from 0.0px 0.0px to 0.0px 5.0px, -fx-text-box-border, derive(-fx-text-box-border, 30.0%));
+	  
+	   */
+	   -fx-padding: 0;
+	   -fx-background-color:  
+	   -fx-background,
+        -fx-text-box-border,
+        rgb(234, 236, 241);
+   -fx-background-radius: 7 7 0 0;
+   
+   -fx-border-width: 2 2 0 2;
+   -fx-border-color: rgb(234, 236, 241);
+  -fx-border-radius: 7 7 0 0;
+   
+}
+
+.tab {
+	-fx-background-radius: 10.0 10.0 0.0 0.0;
+}
+
+.tab-pane:top > .tab-header-area > .tab-header-background {
+    -fx-background-insets: 0, 0 0 1 0, 1;
+}
+
+.tab-pane:top *.tab-header-area {
+	-fx-padding: 2.0px 0.0px 0.0px 20.0px;	
+}
+.tab-pane > .tab-header-area > .headers-region > .tab:top {
+    -fx-background-color: -fx-inner-border, -fx-background, rgb(234, 236, 241);
+}
+
+.tab-pane {
+	-fx-padding: 0.0;
+	-fx-focus-color: transparent;
+	-fx-open-tab-animation: NONE;
+	-fx-close-tab-animation: NONE;
+	-fx-tab-min-height: 20.0px;
+	-fx-tab-max-height: 20.0px;
+}
+
+.tab-pane .tab:selected .focus-indicator {
+	-fx-border-color: transparent;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * CHARTS                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+
+.default-color0.chart-legend-item-symbol,
+.default-color1.chart-legend-item-symbol,
+.default-color2.chart-legend-item-symbol,
+.default-color3.chart-legend-item-symbol,
+.default-color4.chart-legend-item-symbol,
+.default-color5.chart-legend-item-symbol,
+.default-color6.chart-legend-item-symbol,
+.default-color7.chart-legend-item-symbol{
+    -fx-border-radius: 10 10 10 10;
+  	-fx-background-radius: 10 10 10 10;
+  	  	   -fx-padding: 8px;
+  	
+}
+
+
+.chart-legend {
+   -fx-background-color: -fx-shadow-highlight-color,
+        linear-gradient(to bottom, derive(-fx-background, -10%), derive(-fx-background, -5%)),
+        linear-gradient(from 0px 0px to 0px 2px, derive(-fx-background, -4%), derive(-fx-background, 30%));
+   -fx-background-insets: 0 0 -1 0, 0,1;
+   -fx-background-radius: 15;
+   -fx-padding: 3px;
+}
+
+.chartDarkX {
+	-fx-effect: dropshadow(gaussian, derive(#1E90FF, 40%) , 8, 0.2, 0.0, 0.0);
+	-fx-background-color: rgba(0, 0, 0, 0.5);
+	-fx-background-radius: 7;
+	-fx-border-radius: 7; 	
+	
+    -fx-background-insets: 5 0 5 5;
+    -fx-padding: 10.0px;
+    -fx-border-insets: 5 0 5 5;
+	-fx-border-width: 0.5;
+	-fx-border-color: derive(#1E90FF, 50%);
+}
+/*	-fx-effect:dropshadow(two-pass-box , white, 5, 0.4 , -2, -2);
+ * -fx-border-color: white; 
+	-fx-border-width: 0.5;*/
+
+.chart {
+	-fx-background-color: rgb(234, 236, 241);
+	-fx-background-radius: 7;
+	-fx-border-radius: 7; 
+	
+	-fx-effect:dropshadow(two-pass-box , white, 5, 0.4 , 0, 0);
+	
+    -fx-background-insets: 5 5 5 5;
+    -fx-padding: 10.0px;
+    -fx-border-insets: 5 5 5 5;	
+}
+
+.chart-plot-background {
+    -fx-background-color: white;
+}
+
+.chart-content {
+    -fx-padding: 5px;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * BarChart                                                                    *
+ *                  
+.default-color0.chart-bar {    
+    -fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
+   -fx-border-radius: 7 7 7 7;
+  	-fx-background-radius: 7 7 7 7;
+  	
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0.0, 0.0);
+}                               #ABC3FF                            *
+ ******************************************************************************/
+
+.chart-bar {
+    -fx-background-color:  radial-gradient(center 50.0% -40.0%, radius 200.0%,  derive(-fx-bar-fill, 40.0%) 45.0%, -fx-bar-fill 50.0%); 
+    -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+  	-fx-background-insets: 0.0;
+    -fx-border-radius: 7.0 7.0 0.0 0.0;
+  	-fx-background-radius: 7.0 7.0 0.0 0.0;
+}
+
+.chart-bar.negative {
+    -fx-background-insets: 1 0 0 0;
+}
+
+.bar-chart:horizontal .chart-bar {
+    -fx-background-insets: 0 0 0 1;
+}
+
+
+.default-color0.chart-bar { -fx-bar-fill: #80B9FA; }
+.default-color1.chart-bar { -fx-bar-fill: #ade0ff; }
+.default-color2.chart-bar { -fx-bar-fill: #8CFFAF; }
+.default-color3.chart-bar { -fx-bar-fill: #D1B2FF; }
+.default-color4.chart-bar { -fx-bar-fill: CHART_COLOR_5; }
+.default-color5.chart-bar { -fx-bar-fill: CHART_COLOR_6; }
+.default-color6.chart-bar { -fx-bar-fill: CHART_COLOR_7; }
+.default-color7.chart-bar { -fx-bar-fill: CHART_COLOR_8; }
+
+/*******************************************************************************
+ *                                                                             *
+ * LineChart                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.chart-line-symbol {
+	
+    -fx-background-color: #80B9FA, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+         -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+    
+}
+.chart-series-line {
+    -fx-stroke: #80B9FA;
+    -fx-stroke-width: 3px;
+         -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+    
+}
+.default-color0.chart-line-symbol { -fx-background-color: #80B9FA, white; }
+.default-color1.chart-line-symbol { -fx-background-color: #ade0ff, white; }
+.default-color2.chart-line-symbol { -fx-background-color: #8CFFAF, white; }
+.default-color3.chart-line-symbol { -fx-background-color: #D1B2FF, white; }
+.default-color4.chart-line-symbol { -fx-background-color: CHART_COLOR_5, white; }
+.default-color5.chart-line-symbol { -fx-background-color: CHART_COLOR_6, white; }
+.default-color6.chart-line-symbol { -fx-background-color: CHART_COLOR_7, white; }
+.default-color7.chart-line-symbol { -fx-background-color: CHART_COLOR_8, white; }
+.default-color0.chart-series-line { -fx-stroke: #80B9FA; }
+.default-color1.chart-series-line { -fx-stroke: #ade0ff; }
+.default-color2.chart-series-line { -fx-stroke: #8CFFAF; }
+.default-color3.chart-series-line { -fx-stroke: #D1B2FF; }
+.default-color4.chart-series-line { -fx-stroke: CHART_COLOR_5; }
+.default-color5.chart-series-line { -fx-stroke: CHART_COLOR_6; }
+.default-color6.chart-series-line { -fx-stroke: CHART_COLOR_7; }
+.default-color7.chart-series-line { -fx-stroke: CHART_COLOR_8; }
+
+
+
+/*******************************************************************************
+*                                                                             *
+* TableView                                                                   *
+*                                                                             *
+******************************************************************************/
+
+   
+            
+            
+.table-view .column-header,
+.table-view .filler,
+.table-view > .column-header-background > .show-hide-columns-button,
+.table-view:constrained-resize .filler {
+    -fx-background-color: -fx-box-border, -fx-inner-border, 
+    linear-gradient(to bottom,
+            ladder(
+                rgb(234, 236, 241),
+                derive(rgb(234, 236, 241),8%) 75%,
+                derive(rgb(234, 236, 241),10%) 80%
+            ),  derive(rgb(234, 236, 241),-8%));
+            
+            
+    -fx-background-insets: 0, 0 1 1 0, 1 2 2 1;
+    -fx-font-weight: bold;
+    -fx-size: 2em;
+    -fx-text-fill: -fx-selection-bar-text;
+    -fx-padding: 0.166667em;
+}
+
+
+.table-view > .virtual-flow > .scroll-bar:vertical {
+	-fx-background-color: rgba(0,0,0,0.01);
+	-fx-padding: -5 -10 -5 -10;
+	-fx-pref-width: 0.5px;
+}
+
+.table-view > .virtual-flow > .scroll-bar:horizontal {
+	-fx-background-color: rgba(0,0,0,0.01);
+	-fx-padding: -10 -5 -10, -5;
+	-fx-pref-height: 0.5px;
+}
+
+
+.table-view > .virtual-flow > .corner {
+	-fx-background-color: rgba(0,0,0,0.01);
+}
+
+
+
+
+/* Plus Symbol */
+
+.table-view .show-hide-column-image {
+	   -fx-background-color: -fx-box-border, -fx-inner-border, 
+    linear-gradient(to bottom,
+            ladder(
+                rgb(234, 236, 241),
+                derive(rgb(234, 236, 241),8%) 75%,
+                derive(rgb(234, 236, 241),10%) 80%
+            ),  derive(rgb(234, 236, 241),-8%));
+            
+    -fx-background-insets: 0, 0 1 1 0, 1 0 0 1;	
+	-fx-padding: 12 0 14 18;
+	-fx-translate-x: 10;
+	-fx-shape: "M10,10 L90,10 L90,90 L10,90 Z";
+}
+
+.table-view > .column-header-background > .show-hide-columns-button {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-translate-x: -10px;
+}
+
+.scroll-bar > .increment-button:hover,
+.scroll-bar > .decrement-button:hover {
+	-fx-color: transparent;
+}
+
+/* Text Area */
+.text-area{
+    -fx-background-color: #fff, #fff;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+    -fx-border-color: white;
+    -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 10, 0.0 , 0, 0);   
+    -fx-padding: 5; 
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;    
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent;
+    -fx-background-radius: 7;
+    -fx-border-radius: 7;
+}
+
+
+
+.tool-bar {
+    -fx-spacing: 10px; /* Adjust the value as per your preference */
+}
+
+
+.chartButton {
+	-fx-background-image: url("chart.png");
+	-fx-alignment: CENTER;
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    
+}
+
+.chartToggleButton {
+	-fx-background-image: url("chartsToggle.png");
+	-fx-alignment: CENTER;
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    
+}
+
+.consoleButton {
+	-fx-background-image: url("console.png");
+    -fx-alignment: bottom-center;
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    
+}
+
+.listButton {
+	-fx-background-image: url("list.png");
+    -fx-alignment: bottom-center;
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    
+}
+
+.gridButton {
+	-fx-background-image: url("grid.png");
+    -fx-alignment: bottom-center;
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}

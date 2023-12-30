@@ -13,22 +13,23 @@
 
     <properties>
         <!-- Set this to the class with the main method for your application -->
-        <main-class>com.changenode.BaseApplication</main-class>
+        <main-class>launcher.Napp</main-class>
         <!-- Change your app's name to something interesting... but you might want to avoid spaces
         just to safe for compatibility across operating systems. -->
-        <app.name>TestApp</app.name>
+        <app.name>iCalc</app.name>
         <!-- This converts the build timestamp to a Windows-installer friendly version number (minute level resolution).
         Note that Maven generated timestamp is in UTC, not local time. For more information see:
          https://docs.microsoft.com/en-us/windows/win32/msi/productversion
          https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/SimpleDateFormat.html
          -->
 
-        <app.version>1.0.0</app.version>
+        <app.version>2.0.0</app.version>
 
         <!-- This property is used to specify the modules included in the (custom) JVM image. -->
         <!-- Reminder: javafx.web (the embedded browser component) is not included in this project by default due
         to GitHub template size restrictions. You can download the full SDK from https://openjfx.io -->
-        <jvm.modules>javafx.media,javafx.controls,javafx.fxml,java.logging</jvm.modules>
+<!--        <jvm.modules>javafx.media,javafx.controls,javafx.fxml,java.logging</jvm.modules>-->
+        <jvm.modules>javafx.controls,java.sql,java.naming,java.management,java.security.jgss</jvm.modules>
 
         <!-- Set the project to UTF-8, avoiding warnings in the build logs -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,12 +66,49 @@
             <artifactId>atlantafx-base</artifactId>
             <version>1.1.0</version>
         </dependency>
+
+<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.31</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>9.2.1.jre11</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.23</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc10</artifactId>
+			<version>19.12.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>3.34.0</version>
+		</dependency>
+		
     </dependencies>
 
     <build>
         <extensions>
-            <!-- Used to inject the OS and architecture values in a consistent manner -->
-            <!-- https://github.com/trustin/os-maven-plugin -->
+			<!-- Used to inject the OS and architecture values in a consistent manner -->
+			<!-- https://github.com/trustin/os-maven-plugin -->
             <extension>
                 <groupId>kr.motd.maven</groupId>
                 <artifactId>os-maven-plugin</artifactId>
@@ -79,13 +117,13 @@
         </extensions>
         <resources>
             <resource>
-                <!-- Here we are processing the platform-specific jpackage command files, adding in Maven
+				<!-- Here we are processing the platform-specific jpackage command files, adding in Maven
                  properties for configuration. -->
                 <directory>${project.basedir}/src/packaging</directory>
                 <filtering>true</filtering>
                 <targetPath>${project.build.directory}/packaging</targetPath>
             </resource>
-            <!-- Add the default resource path back in - by overriding above it disables the default -->
+			<!-- Add the default resource path back in - by overriding above it disables the default -->
             <resource>
                 <directory>${project.basedir}/src/main/resources</directory>
                 <filtering>true</filtering>
@@ -101,7 +139,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
                 <configuration>
-                    <!-- This is an app, so we don't want to install it in the local Maven repository -->
+					<!-- This is an app, so we don't want to install it in the local Maven repository -->
                     <skip>true</skip>
                 </configuration>
             </plugin>
@@ -110,7 +148,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <!-- This copies the jar files declared by the Maven build into a single directory.
+						<!-- This copies the jar files declared by the Maven build into a single directory.
                         This makes it easy to assemble the final installer package -->
                         <id>copy-dependencies</id>
                         <phase>package</phase>
@@ -118,9 +156,9 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <!-- Include only compile stage dependencies (no test dependencies) -->
+							<!-- Include only compile stage dependencies (no test dependencies) -->
                             <includeScope>compile</includeScope>
-                            <!-- The JavaFX libraries are bundled into the custom JVM, so we don't want to duplicate
+							<!-- The JavaFX libraries are bundled into the custom JVM, so we don't want to duplicate
                             them in the bundled app and installer. This command skips all of the JavaFX by groupId. -->
                             <excludeGroupIds>org.openjfx</excludeGroupIds>
                         </configuration>
@@ -128,7 +166,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <!-- Put the application jar generated by the project into the dependency folder - the default folder
+				<!-- Put the application jar generated by the project into the dependency folder - the default folder
                 for the maven-dependency-plugin output. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -137,7 +175,7 @@
                 </configuration>
             </plugin>
             <plugin>
-                <!-- Plugin to make working with JavaFX nicer. See https://github.com/openjfx/javafx-maven-plugin -->
+				<!-- Plugin to make working with JavaFX nicer. See https://github.com/openjfx/javafx-maven-plugin -->
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
@@ -146,12 +184,12 @@
                 </configuration>
             </plugin>
             <plugin>
-                <!-- https://github.com/wiverson/jtoolprovider-plugin -->
+				<!-- https://github.com/wiverson/jtoolprovider-plugin -->
                 <groupId>io.github.wiverson</groupId>
                 <artifactId>jtoolprovider-plugin</artifactId>
                 <version>1.0.34</version>
                 <executions>
-                    <!-- This command runs jlink, generating a custom JVM by combining the JavaFX modules bundled in
+					<!-- This command runs jlink, generating a custom JVM by combining the JavaFX modules bundled in
                     this project with the JDK modules. -->
                     <execution>
                         <id>jlink</id>
@@ -173,7 +211,7 @@
                             </args>
                         </configuration>
                     </execution>
-                    <!-- The command that actually generates the installer. The options for each platform
+					<!-- The command that actually generates the installer. The options for each platform
                     are found the /src/packaging directory. These files are copied into the target directory by
                     the Maven resources plugin, which does the filtering to replace the original values with
                     the actual Maven properties.
@@ -259,15 +297,15 @@
     </build>
     <reporting>
         <plugins>
-            <!-- Basic report generation. -->
+			<!-- Basic report generation. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.3.0</version>
             </plugin>
 
-            <!-- http://mojo.codehaus.org/versions-maven-plugin/version-rules.html -->
-            <!-- This plugin is a utility to find outdated dependencies in your project. Just run mvn site and
+			<!-- http://mojo.codehaus.org/versions-maven-plugin/version-rules.html -->
+			<!-- This plugin is a utility to find outdated dependencies in your project. Just run mvn site and
             the resulting HTML reports in target/site will let you know what plugins and dependencies are out of date.
              -->
             <plugin>
@@ -298,7 +336,7 @@
                 </property>
             </activation>
             <properties>
-                <!--suppress UnresolvedMavenProperty -->
+				<!--suppress UnresolvedMavenProperty -->
                 <app.version>1.1.${env.GITHUB_RUN_NUMBER}</app.version>
             </properties>
         </profile>
@@ -315,7 +353,7 @@
         </profile>
 
 
-        <!-- We use the built-in Maven profile activation system to set the platform property.
+		<!-- We use the built-in Maven profile activation system to set the platform property.
         These properties are then use to build the directory paths to the platform specific resources.
         It would be great if Maven automatically added the os family as a property by default
          -->
@@ -327,7 +365,7 @@
             </activation>
             <properties>
                 <macos.sign>--mac-sign</macos.sign>
-                <!-- You will have to replace this with your own dev information from your Apple identity -->
+				<!-- You will have to replace this with your own dev information from your Apple identity -->
                 <macos.sign.identity>--mac-signing-key-user-name "Company Name, Inc. (BXPXTXC35S)"</macos.sign.identity>
             </properties>
         </profile>
@@ -342,7 +380,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <!-- This adds a "launch on finish" to the Windows msi installer. This just tweaks the Windows
+						<!-- This adds a "launch on finish" to the Windows msi installer. This just tweaks the Windows
                          installer package to run the executable after the installer runs, simplifying the user experience.
                           If you don't want this behavior, just delete this plug execution. -->
                         <groupId>org.codehaus.mojo</groupId>

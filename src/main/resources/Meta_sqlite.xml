@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nbase>
+    <nfunctions>
+        <nfunction close=")" closeParam=" " id="4" label="Avg" open="(" openParam=" " realname="AVG" type="AGRIGATE"/>
+        <nfunction close=")" closeParam=" " id="9" label="Count" open="(" openParam=" " realname="COUNT" type="AGRIGATE"/>
+        <nfunction close=")" closeParam=" " id="14" label="Distinct" open="(" openParam=" " realname="DISTINCT" type="AGRIGATE"/>
+        <nfunction close=")" closeParam=" " id="19" label="Day" open="(" openParam="'%d'," realname="strftime" type="GROUP"/>
+        <nfunction close=")" closeParam=" " id="24" label="Month" open="(" openParam="'%m'," realname="strftime" type="GROUP"/>
+        <nfunction close=")" closeParam=" " id="29" label="Sum" open="(" openParam=" " realname="SUM" type="AGRIGATE"/>
+        <nfunction close=")" closeParam=" " id="34" label="Year" open="(" openParam="'%Y'," realname="strftime" type="GROUP"/>
+        <nfunction close=")" closeParam="" label="IN" open="(" openParam="" realname="IN" rowset_type="String" type="OTHER"/>
+        <nfunction close=")" closeParam="" label="MAX" open="(" openParam="" realname="MAX" rowset_type="String" type="OTHER"/>
+        <nfunction close=")" closeParam="" label="MIN" open="(" openParam="" realname="MIN" rowset_type="String" type="OTHER"/>
+    </nfunctions>
+    <ntypes>
+        <ntype data_type="blob" rowset_type="exclude"/>
+        <ntype data_type="mediumblob" rowset_type="exclude"/>
+        <ntype data_type="longblob" rowset_type="exclude"/>
+        <ntype data_type="json" rowset_type="exclude"/>
+        <ntype data_type="CLOB" rowset_type="exclude"/>
+        <ntype data_type="varbinary" rowset_type="exclude"/>
+        <ntype data_type="" rowset_type="String"/>
+        <ntype data_type="&quot;char&quot;" rowset_type="String"/>
+        <ntype data_type="anyarray" rowset_type="String"/>
+        <ntype data_type="ARRAY" rowset_type="String"/>
+        <ntype data_type="bigint" rowset_type="Double"/>
+        <ntype data_type="binary" rowset_type="String"/>
+        <ntype data_type="bit" rowset_type="String"/>
+        <ntype data_type="BLOB SUB_TYPE TEXT" rowset_type="String"/>
+        <ntype data_type="boolean" rowset_type="String"/>
+        <ntype data_type="bytea" rowset_type="String"/>
+        <ntype data_type="char" rowset_type="String"/>
+        <ntype data_type="character" rowset_type="String"/>
+        <ntype data_type="character varying" rowset_type="String"/>
+        <ntype data_type="decimal" rowset_type="Double"/>
+        <ntype data_type="date" rowset_type="Date"/>
+        <ntype data_type="datetime" rowset_type="Timestamp"/>
+        <ntype data_type="double" rowset_type="Double"/>
+        <ntype data_type="double precision" rowset_type="String"/>
+        <ntype data_type="enum" rowset_type="String"/>
+        <ntype data_type="float" rowset_type="Float"/>
+        <ntype data_type="geometry" rowset_type="String"/>
+        <ntype data_type="image" rowset_type="String"/>
+        <ntype data_type="inet" rowset_type="String"/>
+        <ntype data_type="int" rowset_type="Int"/>
+        <ntype data_type="INTEGER" rowset_type="Int"/>
+        <ntype data_type="interval" rowset_type="String"/>
+        <ntype data_type="longtext" rowset_type="String"/>
+        <ntype data_type="mediumint" rowset_type="Int"/>
+        <ntype data_type="mediumtext" rowset_type="String"/>
+        <ntype data_type="name" rowset_type="String"/>
+        <ntype data_type="NUMBER" rowset_type="BigDecimal"/>
+        <ntype data_type="NUMERIC" rowset_type="BigDecimal"/>
+        <ntype data_type="NVARCHAR" rowset_type="String"/>
+        <ntype data_type="oid" rowset_type="String"/>
+        <ntype data_type="pg_dependencies" rowset_type="String"/>
+        <ntype data_type="pg_lsn" rowset_type="String"/>
+        <ntype data_type="pg_mcv_list" rowset_type="String"/>
+        <ntype data_type="pg_ndistinct" rowset_type="String"/>
+        <ntype data_type="pg_node_tree" rowset_type="String"/>
+        <ntype data_type="RAW" rowset_type="String"/>
+        <ntype data_type="REAL" rowset_type="String"/>
+        <ntype data_type="regproc" rowset_type="String"/>
+        <ntype data_type="regtype" rowset_type="String"/>
+        <ntype data_type="set" rowset_type="String"/>
+        <ntype data_type="smallint" rowset_type="Int"/>
+        <ntype data_type="text" rowset_type="String"/>
+        <ntype data_type="time" rowset_type="Time"/>
+        <ntype data_type="timestamp" rowset_type="Timestamp"/>
+        <ntype data_type="timestamp with time zone" rowset_type="Timestamp"/>
+        <ntype data_type="timestamp without time zone" rowset_type="Timestamp"/>
+        <ntype data_type="TIMESTAMP(6)" rowset_type="Timestamp"/>
+        <ntype data_type="tinyint" rowset_type="Int"/>
+        <ntype data_type="tsvector" rowset_type="String"/>
+        <ntype data_type="USER-DEFINED" rowset_type="String"/>
+        <ntype data_type="varchar" rowset_type="String"/>
+        <ntype data_type="VARCHAR2" rowset_type="String"/>
+        <ntype data_type="xid" rowset_type="String"/>
+        <ntype data_type="year" rowset_type="Timestamp"/>
+    </ntypes>
+    <formats>
+        <format format="%s" id="1" label="plain"/>
+        <format format="%.2f" id="2" label="0.00"/>
+        <format format="$%.2f" id="3" label="$0.00"/>
+        <format format="%.5f" id="4" label="0.00000"/>
+    </formats>
+</nbase>
