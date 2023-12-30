@@ -38,7 +38,7 @@
 		<!--
 		<jvm.modules>javafx.media,javafx.controls,javafx.fxml,java.logging</jvm.modules>-->
 		
-		<javafx.jmod.directory>/path/to/javafx-sdk/lib</javafx.jmod.directory>
+<!--		<javafx.jmod.directory>/path/to/javafx-sdk/lib</javafx.jmod.directory>-->
 		<jvm.modules>javafx.controls,java.sql,java.naming,java.management,java.security.jgss</jvm.modules>
 
 		<!-- Set the project to UTF-8, avoiding warnings in the build logs -->
@@ -465,19 +465,22 @@
 							</arguments>
 						</configuration>
 					</plugin>
-					
+
+
+					<!-- Julian Rakhuba -->
 					<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.0</version>
-            <configuration>
-                <fork>true</fork>
-                <compilerArgs>
-                    <arg>--module-path</arg>
-                    <arg>${javafx.jmod.directory}</arg>
-                </compilerArgs>
-            </configuration>
-        </plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.8.0</version>
+						<configuration>
+							<fork>true</fork>
+							<compilerArgs>
+								<arg>--module-path</arg>
+								<arg>${javafx.jmod.directory}</arg>
+							</compilerArgs>
+						</configuration>
+					</plugin>
+					
 				</plugins>
 			</build>
 		</profile>

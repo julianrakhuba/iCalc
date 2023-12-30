@@ -86,7 +86,7 @@ public class Constellatio {
 	}
 	
 	public void setTitle(String string) {
-		title.setValue("Constellatio 1.1" + string);
+		title.setValue("iCalc 2.0" + string);
 	}
 
 	public ConnectionStage getConnectionStage() {
