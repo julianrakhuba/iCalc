@@ -150,6 +150,19 @@
 				<directory>${project.basedir}/src/main/resources/build-info/</directory>
 				<filtering>true</filtering>
 			</resource>
+			
+			
+            <resource>
+                <directory>${project.basedir}</directory>
+                <includes>
+                    <include>sakila.db</include>
+                    <include>Chinook.db</include>
+                    <include>North.db</include>
+                    <!-- Add more files as needed -->
+                </includes>
+            </resource>
+			
+			
 		</resources>
 
 		<plugins>
