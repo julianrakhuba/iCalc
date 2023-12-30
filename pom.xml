@@ -68,19 +68,19 @@
 		example. It brings in other transitive
          dependencies as well. You can remove it from your project (unless you happen to
 		need to generate test data.  -->
-		<dependency>
-			<groupId>com.github.javafaker</groupId>
-			<artifactId>javafaker</artifactId>
-			<version>1.0.2</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.github.javafaker</groupId>-->
+<!--			<artifactId>javafaker</artifactId>-->
+<!--			<version>1.0.2</version>-->
+<!--		</dependency>-->
 
 		<!-- Modern JavaFX Look and Feel -->
 		<!-- https://github.com/mkpaz/atlantafx -->
-		<dependency>
-			<groupId>io.github.mkpaz</groupId>
-			<artifactId>atlantafx-base</artifactId>
-			<version>1.1.0</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>io.github.mkpaz</groupId>-->
+<!--			<artifactId>atlantafx-base</artifactId>-->
+<!--			<version>1.1.0</version>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.freemarker</groupId>
@@ -327,6 +327,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	
 	<reporting>
 		<plugins>
 			<!-- Basic report generation. -->
@@ -363,6 +364,7 @@
 			<!--            </plugin>-->
 		</plugins>
 	</reporting>
+	
 	<profiles>
 		<profile>
 			<id>GitHub Run</id>
@@ -453,4 +455,5 @@
 			</build>
 		</profile>
 	</profiles>
+	<name>iCalc 2.0</name>
 </project>
