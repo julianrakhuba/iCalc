@@ -5,7 +5,11 @@
 --main-class ${main-class}
 --input "${project.build.directory}/dependency"
 --app-version ${app.version}
+
 --runtime-image "${project.build.directory}/jvm-image"
 --temp "${project.build.directory}/installer-work"
+
+--file-associations "${project.basedir}/FAconstallation.properties"
+
 ${macos.sign}
 ${macos.sign.identity}
