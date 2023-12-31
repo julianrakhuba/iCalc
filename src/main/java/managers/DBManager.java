@@ -33,7 +33,7 @@ package managers;
 
 import java.util.HashMap;
 
-import application.Constellatio;
+import application.iCalc;
 import builder.Build;
 import connections.MicroSoftConn;
 import connections.MysqlConn;
@@ -46,12 +46,12 @@ import login.Configuration;
 import status.ConnectionStatus;
 
 public class DBManager {
-	private Constellatio napp;
+	private iCalc napp;
 	private Configuration logins;
 	private HashMap<Login,BaseConnection> connections = new HashMap<Login,BaseConnection>();	
 	private BaseConnection activeConnection;
 	
-	public DBManager(Constellatio napp) {
+	public DBManager(iCalc napp) {
 		this.napp = napp;
 		logins = new Configuration(napp);
 		logins.getLoginList().forEach(lgin ->{

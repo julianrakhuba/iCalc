@@ -31,7 +31,7 @@
  *******************************************************************************/
 package menu;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -43,7 +43,7 @@ import javafx.scene.control.SeparatorMenuItem;
 import javafx.util.Duration;
 
 public class ViewMenu extends Menu {
-	private Constellatio constellatio;
+	private iCalc constellatio;
 	private MenuItem centerMenuItem = new MenuItem("Center");
 	private MenuItem inMenuItem = new MenuItem("In");	
 	private MenuItem outMenuItem = new MenuItem("Out");
@@ -55,7 +55,7 @@ public class ViewMenu extends Menu {
 	private CheckMenuItem dynamicSearchMenuItem = new CheckMenuItem("Dynamic SQL");
 	private CheckMenuItem autoFoldMenuItem = new CheckMenuItem("Auto-fold");
 
-	public ViewMenu(String string, Constellatio constellatio) {
+	public ViewMenu(String string, iCalc constellatio) {
 		super(string);
 		this.constellatio = constellatio;
 		

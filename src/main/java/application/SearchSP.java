@@ -49,7 +49,7 @@ import status.ActivityMode;
 
 
 public class SearchSP extends StackPane {
-	private Constellatio constellatio;
+	private iCalc constellatio;
 	private HBox overlapBox = new HBox(-15);
 	private FunctionsButton functionsButton;
 	private ContextMenu searchContext;
@@ -60,7 +60,7 @@ public class SearchSP extends StackPane {
 	private Pane holderPane = new Pane();
 
 	
-	public SearchSP(Constellatio constellatio) {
+	public SearchSP(iCalc constellatio) {
 		this.getStyleClass().add("newSearchBar");
 		
 		this.constellatio = constellatio;

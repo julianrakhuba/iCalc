@@ -31,7 +31,7 @@
  *******************************************************************************/
 package menu;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
@@ -51,7 +51,7 @@ public class EditMenu extends Menu {
 	private MenuItem copyMenuItem = new MenuItem("Copy");
 	private MenuItem clearMenuItem = new MenuItem("Clear");
 	
-	public EditMenu(String string, Constellatio constellatio) {
+	public EditMenu(String string, iCalc constellatio) {
 		super(string);
 		this.getItems().addAll(undoMenuItem, redoMenuItem, new SeparatorMenuItem(), copyMenuItem, new SeparatorMenuItem(), clearMenuItem);
 		clearMenuItem.setOnAction(e -> {

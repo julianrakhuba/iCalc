@@ -43,10 +43,10 @@ public class BottomButton extends Pane {
 	
 	private Timeline showTimeLine;
 	private Timeline hideTimeLine;
-	private Constellatio constellatio;
+	private iCalc constellatio;
 	
 	
-	public BottomButton(Constellatio constellatio, String style) {
+	public BottomButton(iCalc constellatio, String style) {
 		this.constellatio = constellatio;
 		this.getStyleClass().add(style);		
 		this.setOnMouseEntered(e -> this.zoomIn());

@@ -31,7 +31,7 @@
  *******************************************************************************/
 package menu;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.MenuBar;
@@ -44,7 +44,7 @@ public class NMenu extends MenuBar {
 	private EditMenu editMenu;	
 	private FileMenu fileMenu;
 	
-	public NMenu(Constellatio constellatio) {
+	public NMenu(iCalc constellatio) {
 		fileMenu = new FileMenu("File", constellatio);
 		editMenu = new EditMenu("Edit", constellatio);	
 		viewMenu = new ViewMenu("View", constellatio);

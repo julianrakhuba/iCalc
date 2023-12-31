@@ -31,7 +31,7 @@
  *******************************************************************************/
 package search;
 
-import application.Constellatio;
+import application.iCalc;
 import application.NScene;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -51,12 +51,12 @@ import javafx.util.Duration;
 public class PopUpStage extends Stage {
 	private VBox vbox = new VBox();
 	private StackPane root = new StackPane(vbox);
-	private Constellatio napp;
+	private iCalc napp;
 	
 	private NScene nscene;
 	private Region anchor;
 	
-	public PopUpStage(Constellatio napp, Region anchor) {
+	public PopUpStage(iCalc napp, Region anchor) {
 		initOwner(napp.getStage());
 		initStyle(StageStyle.TRANSPARENT);		
 		initModality(Modality.NONE);

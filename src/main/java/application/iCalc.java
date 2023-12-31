@@ -53,7 +53,7 @@ import managers.FileManager;
 import menu.NMenu;
 import status.VisualStatus;
 
-public class Constellatio {
+public class iCalc {
 	private static String configurationPath = System.getProperty("user.home") + "/Library/Application Support/Constellatio/";
 	private NMenu menuBar;
 	private BottomBar bottomBar = new BottomBar(this);
@@ -81,7 +81,7 @@ public class Constellatio {
 	private double initX;
 	private double initY;
 
-	public Constellatio(ConstellatioStart startFX) {
+	public iCalc(ConstellatioStart startFX) {
 		this.startFX = startFX;
 	}
 	

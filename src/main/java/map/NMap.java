@@ -43,7 +43,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import activity.Configure;
-import application.Constellatio;
+import application.iCalc;
 import application.JoinLine;
 import application.XML;
 import clientcomponents.NFunction;
@@ -67,7 +67,7 @@ import status.Population;
 import status.SqlType;
 
 public class NMap  {
-	private  Constellatio napp;
+	private  iCalc napp;
 	private  Pane schemaPane = new Pane();
 	private ScrollPane scrollPane = new ScrollPane();
 	private Group group = new Group(schemaPane);
@@ -474,7 +474,7 @@ public class NMap  {
 		/**
 		 * @return the napp
 		 */
-		public Constellatio getNapp() {
+		public iCalc getNapp() {
 			return napp;
 		}
 }

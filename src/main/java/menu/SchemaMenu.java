@@ -31,7 +31,7 @@
  *******************************************************************************/
 package menu;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
@@ -44,7 +44,7 @@ public class SchemaMenu extends Menu {
 	private CheckMenuItem editSchema = new CheckMenuItem("Edit Schema");
 	private MenuItem saveSchema = new MenuItem("Save Schema");
 	
-	public SchemaMenu(String string, Constellatio constellatio) {
+	public SchemaMenu(String string, iCalc constellatio) {
 		super (string);
 		this.getItems().addAll(getAddschema(), getRemoveschema(), new SeparatorMenuItem(), getEditSchema(), saveSchema);
 		this.setOnAction(e -> {

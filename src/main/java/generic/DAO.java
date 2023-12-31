@@ -37,7 +37,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.input.Clipboard;
@@ -46,7 +46,7 @@ import layer.LAY;
 import logic.SQL;
 
 public abstract class DAO {
-	public Constellatio napp;	
+	public iCalc napp;	
 	public  Connection connection = null; 
 	private  Statement statement = null; 
 	private  ResultSet resultSet = null;

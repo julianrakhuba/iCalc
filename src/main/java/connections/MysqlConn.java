@@ -35,7 +35,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import application.Constellatio;
+import application.iCalc;
 import clients.Meta;
 import clients.MySqlMeta;
 import generic.BaseConnection;
@@ -44,7 +44,7 @@ import login.Login;
 public class MysqlConn extends BaseConnection {
 	private Meta meta;
 
-	public MysqlConn(Login lgin, Constellatio napp) {
+	public MysqlConn(Login lgin, iCalc napp) {
 		super (lgin, napp);
 	}
 	

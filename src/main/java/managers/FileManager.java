@@ -33,7 +33,7 @@ package managers;
 
 import java.io.File;
 
-import application.Constellatio;
+import application.iCalc;
 import file.NFile;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -44,12 +44,12 @@ import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 
 public class FileManager {
-	private Constellatio napp;
+	private iCalc napp;
 	private ObjectProperty<NFile> activeNFile = new SimpleObjectProperty<NFile>();
 	private ObservableList<NFile> openFiles = FXCollections.observableArrayList();	
 	private File autoOpenFile;
 	
-	public FileManager(Constellatio napp) {
+	public FileManager(iCalc napp) {
 		this.napp = napp;
 		activeNFile.addListener((c,f,h) -> {
 			if(activeNFile.getValue() != null) {
@@ -183,7 +183,7 @@ public class FileManager {
 	/**
 	 * @return the napp
 	 */
-	public Constellatio getNapp() {
+	public iCalc getNapp() {
 		return napp;
 	}
 

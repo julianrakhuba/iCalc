@@ -61,7 +61,7 @@ public class BottomBar extends ToolBar {
 	private BottomButton gridBtn;
 	
 
-	public BottomBar(Constellatio constellatio) {
+	public BottomBar(iCalc constellatio) {
 		HBox.setHgrow(spacerA, Priority.SOMETIMES);
 		HBox.setHgrow(spacerB, Priority.SOMETIMES);
 		

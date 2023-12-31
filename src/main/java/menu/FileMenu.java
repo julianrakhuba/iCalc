@@ -32,7 +32,7 @@
 package menu;
 
 import activity.Select;
-import application.Constellatio;
+import application.iCalc;
 import javafx.application.Platform;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.Menu;
@@ -44,7 +44,7 @@ import javafx.scene.input.KeyCombination;
 import status.ConnectionStatus;
 
 public class FileMenu extends Menu {
-	private Constellatio app;
+	private iCalc app;
 	private Menu newMenu = new Menu("New");
 	private MenuItem openMenuItem = new MenuItem("Open");
 	private MenuItem closeMenuItem = new MenuItem("Close");
@@ -57,7 +57,7 @@ public class FileMenu extends Menu {
 	private MenuItem exitMenuItem = new MenuItem("Exit");
 	
 	
-	public FileMenu(String string, Constellatio app) {
+	public FileMenu(String string, iCalc app) {
 		super (string);
 		this.app = app;
 		exitMenuItem.setOnAction(e -> {

@@ -38,7 +38,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 import activity.Select;
-import application.Constellatio;
+import application.iCalc;
 import application.SearchSP;
 import file.NFile;
 import generic.ACT;
@@ -68,7 +68,7 @@ import application.SkinFix;
 
 public class Search extends TextField {	
 	private ContextMenu contextMenu;
-	private Constellatio napp;
+	private iCalc napp;
 	private ArrayList<String> dynamicChache;
 	private ListView<String> listView = new ListView<String>();
 	private ArrayList<MenuItem> menuItems3 = new ArrayList<MenuItem>();
@@ -76,7 +76,7 @@ public class Search extends TextField {
 	private ArrayList<Nnode> currentNnodes = new  ArrayList<Nnode>();
 	private Nnode focusNnode;
 	
-	public Search(Constellatio app, SearchSP upperPane) {
+	public Search(iCalc app, SearchSP upperPane) {
 		super();
 		this.setFocusTraversable(false);
 		this.napp = app;

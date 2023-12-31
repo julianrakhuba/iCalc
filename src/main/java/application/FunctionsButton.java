@@ -41,7 +41,7 @@ import status.SqlType;
 public class FunctionsButton extends Button {
 	private Property<SqlType> sqlType = new SimpleObjectProperty<SqlType>(SqlType.SQLJ);
 
-	public FunctionsButton(String sting, Constellatio napp) {
+	public FunctionsButton(String sting, iCalc napp) {
 		super(sting);
 		this.setFocusTraversable(false);
 		this.updateStyle();

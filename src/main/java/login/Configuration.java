@@ -50,7 +50,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import application.Constellatio;
+import application.iCalc;
 import application.XML;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -58,9 +58,9 @@ import javafx.collections.ObservableList;
 public class Configuration {
 	private final ObservableList<Login> loginsList = FXCollections.observableArrayList();
 	private File file;
-	private Constellatio napp;
+	private iCalc napp;
 
-	public Configuration(Constellatio napp) {
+	public Configuration(iCalc napp) {
 		this.napp = napp;
 		file = new File(napp.getConfigurationPath() + "configuration.xml");
 		if (!file.exists()) {

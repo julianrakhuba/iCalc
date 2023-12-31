@@ -61,7 +61,7 @@ public class Console extends VBox {
   
 	private PrintStream errorStream;
 	private PrintStream outStream;
-	private Constellatio napp;
+	private iCalc napp;
 	
 	//new queue
 	private ObservableList<String> queue = FXCollections.observableArrayList();
@@ -73,7 +73,7 @@ public class Console extends VBox {
 
 	private LAY activeLAY;
 	
-	public Console(Constellatio napp) {
+	public Console(iCalc napp) {
 		this.napp = napp;
 		
 		if(useFlow) {

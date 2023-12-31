@@ -39,7 +39,7 @@ import org.w3c.dom.Element;
 
 import activity.Edit;
 import application.Console;
-import application.Constellatio;
+import application.iCalc;
 import file.OpenContext;
 import generic.ACT;
 import generic.SideLabel;
@@ -98,7 +98,7 @@ public class RootELM extends ELM{
 		}
 	}
 	
-	public RootELM(FormulaField formula, Constellatio app) {
+	public RootELM(FormulaField formula, iCalc app) {
 		this();
 		this.formula = formula;
 		sideLabel.styleUnselected();
@@ -187,7 +187,7 @@ public class RootELM extends ELM{
 		super.createXMLChildren(context, fx, this);
 	}
 	
-	public Constellatio getConstellatio() {
+	public iCalc getConstellatio() {
 		if(searchCON !=null) {
 			return searchCON.getLay().getNnode().getNmap().getNapp();
 		}else {

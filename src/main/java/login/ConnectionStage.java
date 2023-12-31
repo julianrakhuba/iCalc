@@ -36,7 +36,7 @@ import java.time.Month;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -67,9 +67,9 @@ public class ConnectionStage extends Stage {
 	private Text title = new Text("database login");
 	private TextField username = new TextField();
 	private PasswordField password = new PasswordField();
-	private Constellatio napp;
+	private iCalc napp;
 	
-	public ConnectionStage(DBManager connectionManager, Stage primaryStage, Constellatio napp) {
+	public ConnectionStage(DBManager connectionManager, Stage primaryStage, iCalc napp) {
 		this.initStyle(StageStyle.TRANSPARENT);
 		this.initModality(Modality.APPLICATION_MODAL);// to lock parent stage
 		this.initOwner(primaryStage);// to lock parent stage

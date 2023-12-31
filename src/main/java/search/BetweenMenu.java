@@ -33,7 +33,7 @@ package search;
 
 import java.util.ArrayList;
 
-import application.Constellatio;
+import application.iCalc;
 import application.NScene;
 import javafx.geometry.Insets;
 import javafx.geometry.Point2D;
@@ -49,10 +49,10 @@ import javafx.stage.StageStyle;
 public class BetweenMenu extends Stage {
 	private HBox hbox = new HBox();
 	private StackPane root = new StackPane(hbox);
-	private Constellatio napp;
+	private iCalc napp;
 	private NScene nscene;
 	
-	public BetweenMenu(Constellatio napp, String table, String column, ArrayList<String> distinctValues) {
+	public BetweenMenu(iCalc napp, String table, String column, ArrayList<String> distinctValues) {
 		initOwner(napp.getStage());
 		initStyle(StageStyle.TRANSPARENT);
 		initModality(Modality.WINDOW_MODAL);

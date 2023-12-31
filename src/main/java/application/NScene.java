@@ -41,12 +41,12 @@ import javafx.scene.input.KeyCode;
 
 public class NScene extends Scene {
 	private static HashSet<String> currentKeys = new HashSet<String>();
-	private Constellatio napp;
+	private iCalc napp;
     private String graphDark = getClass().getResource("/GraphDark.css").toExternalForm();//"/GraphDark.css";
     private String graph = getClass().getResource("/Graph.css").toExternalForm();//"/GraphDark.css";
 
     
-	public NScene(Parent root, Constellatio napp) {
+	public NScene(Parent root, iCalc napp) {
 		super(root);
 		this.napp = napp;
 		
@@ -91,7 +91,7 @@ public class NScene extends Scene {
 		return currentKeys;
 	}
 
-	public Constellatio getNapp() {
+	public iCalc getNapp() {
 		return napp;
 	}
 }

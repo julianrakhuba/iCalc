@@ -34,13 +34,13 @@ package launcher;
 import java.awt.Desktop;
 import java.awt.Desktop.Action;
 
-import application.Constellatio;
+import application.iCalc;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 
 public class ConstellatioStart extends Application {
-	private Constellatio constapp = new Constellatio(this);
+	private iCalc constapp = new iCalc(this);
 	
     
 	public ConstellatioStart() {
