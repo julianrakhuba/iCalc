@@ -83,7 +83,7 @@ public class iCalc {
 
 	public iCalc(ConstellatioStart startFX) {
 		this.startFX = startFX;
-	}
+	} 
 	
 	public void setTitle(String string) {
 		title.setValue("iCalc 2.0 " + string);
