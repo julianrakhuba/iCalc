@@ -86,7 +86,7 @@ public class iCalc {
 	}
 	
 	public void setTitle(String string) {
-		title.setValue("iCalc 2.0" + string);
+		title.setValue("iCalc 2.0 " + string);
 	}
 
 	public ConnectionStage getConnectionStage() {
