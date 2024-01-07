@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.changenode</groupId>
-	<artifactId>maven-jpackage-template</artifactId>
+	<artifactId>iCalc</artifactId>
 	<version>1.1-SNAPSHOT</version>
 
 	<!-- This description text is included in the Windows installer by default,
@@ -68,7 +68,7 @@
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
-			<version>21.0.1</version>
+			<version>18.0.1</version>
 		</dependency>
 		<!-- This dependency is a normal Maven dependency, here mainly as an
 		example. It brings in other transitive

@@ -95,48 +95,17 @@ public class NMap  {
 		        		+ "-fx-background-radius: 3;"
 		        		+ "-fx-border-radius: 3;");
 		}else {
-			
-			scrollPane.setStyle("-fx-background-color: rgb(234, 236, 241); "
+			//#E5E7EE  rgb(234, 236, 241)
+			scrollPane.setStyle("-fx-background-color: #E5E7EE; "
 					+ "-fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.05), 5, 0.4 , 2, 2);"
 					+ "-fx-background-radius: 7;");
 		}
-		group.setStyle("-fx-background-color: orange;");
-		schemaPane.setStyle("-fx-background-color: transparent;");
+		
 
 		scrollPane.setHbarPolicy(ScrollBarPolicy.AS_NEEDED);
 		scrollPane.setVbarPolicy(ScrollBarPolicy.AS_NEEDED);
-		
-		schemaPane.setScaleX(1);
-		schemaPane.setScaleY(1);
-		schemaPane.setOpacity(0);
-
-		schemaPane.sceneProperty().addListener((obs, oldScene, newScene) -> {
-			
-			if (nFile.getFileManager().getNapp().getMenu().getViewMenu().getAnimationMenuItem().isSelected()) {
-				 if (newScene != null) {
-					 FadeTransition ft = new FadeTransition(Duration.millis(1000), schemaPane);
-					 ft.setFromValue(0.0);
-					 ft.setToValue(1.0);
-					 ft.play();
-				 }
-			}else {
-				schemaPane.setOpacity(1);
-			}
-			
-		});
-
 		scrollPane.setMinHeight(0);
 		scrollPane.setPannable(false);// this prevents strange jumping ???
-		
-//				ScrollPane sp = ...
-//				sp.setOnMousePressed(e -> {
-//				  if (e.getButton() == MouseButton.MIDDLE) sp.setPannable(true);
-//				});
-//				sp.setOnMouseReleased(e -> {
-//				  if (e.getButton() == MouseButton.MIDDLE) sp.setPannable(false);
-//				});
-		
-		
 		scrollPane.setFitToHeight(true);
 		scrollPane.setFitToWidth(true);
 		scrollPane.setOnMouseClicked(e -> {
@@ -152,6 +121,28 @@ public class NMap  {
 				conf.clearSelection();
 			}
 		}); 
+		
+		group.setStyle("-fx-background-color: orange;");
+		schemaPane.setStyle("-fx-background-color: transparent;");
+		schemaPane.setScaleX(1);
+		schemaPane.setScaleY(1);
+		schemaPane.setOpacity(0);
+		schemaPane.sceneProperty().addListener((obs, oldScene, newScene) -> {
+			
+			if (nFile.getFileManager().getNapp().getMenu().getViewMenu().getAnimationMenuItem().isSelected()) {
+				 if (newScene != null) {
+					 FadeTransition ft = new FadeTransition(Duration.millis(1000), schemaPane);
+					 ft.setFromValue(0.0);
+					 ft.setToValue(1.0);
+					 ft.play();
+				 }
+			}else {
+				schemaPane.setOpacity(1);
+			}
+			
+		});
+
+
 		this.schemaName = schema;
 		getNapp().getDBManager().getActiveConnection().getXMLBase().getXTables().filtered( t -> t.getSchema().equals(schemaName)).forEach(table -> {		
 			this.getMapNodes().put(table.getTable(), new Nnode(this,null, table));

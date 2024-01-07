@@ -1,175 +1,174 @@
-
-* {
-	-fx-baseTESTVARIABLE: #e00;
-}
-.test123 {
-	-fx-background-color: -fx-baseTESTVARIABLE;
-}
+.root {
+    /***************************************************************************
+     * icalc ROOT   *-icalc-base: #E5E7EE;
+     **************************************************************************/   
+    -icalc-base: #E5E7EE;
+    }
 
 .dotedLine {
 	-fx-fill: transparent;
 	-fx-stroke: #d4d4d4;
 	-fx-stroke-width: 0.75;
 	-fx-stroke-line-cap: butt;
-	-fx-stroke-dash-array: 10 5;
+	-fx-stroke-dash-array: 10.0 5.0;
 }
 
 .darkDotedLine {
 	-fx-fill: transparent;
-	-fx-stroke: rgba(159, 165, 169, 0.50);
-	-fx-stroke-width: 1;
+	-fx-stroke: rgba(159.0, 165.0, 169.0, 0.5);
+	-fx-stroke-width: 1.0;
 	-fx-stroke-line-cap: butt;
-	-fx-stroke-dash-array: 10 5;
+	-fx-stroke-dash-array: 10.0 5.0;
 }
 
 .dotedDLine {
 	-fx-fill: transparent;
 	-fx-stroke: orange;
-	-fx-stroke-width: 1;
+	-fx-stroke-width: 1.0;
 	-fx-stroke-line-cap: butt;
-	-fx-stroke-dash-array: 3 3;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
+	-fx-stroke-dash-array: 3.0 3.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.1, 0.0, 2.0);
 }
 
 .custFiedsBututon {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 15 2 2 15;
-	-fx-background-radius: 15 2 2 15;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 15.0 2.0 2.0 15.0;
+	-fx-background-radius: 15.0 2.0 2.0 15.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .layTestBtn {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 15 15 15 15;
-	-fx-background-radius: 15 15 15 15;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 /* Identifier  •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
 .indicatorBlue {
-	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
-	-fx-padding: 1 2 1 2;
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
+	-fx-padding: 1.0 2.0 1.0 2.0;
+	-fx-opacity: 1.0;
 }
 
 .indicatorGreen {
-	-fx-background-color: linear-gradient(#ffffff, #7fff7f), radial-gradient(center 50% -40%, radius 200%, #00fa00 45%, #00fa00 50%);
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
-	-fx-padding: 1 2 1 2;
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#ffffff, #7fff7f), radial-gradient(center 50.0% -40.0%, radius 200.0%, #00fa00 45.0%, #00fa00 50.0%);
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
+	-fx-padding: 1.0 2.0 1.0 2.0;
+	-fx-opacity: 1.0;
 }
 
 .indicatorRed {
-	-fx-background-color: linear-gradient(#ffebeb, #ff6161), radial-gradient(center 50% -40%, radius 200%, #ffc7c7 45%, #ff3d3d 50%);
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
-	-fx-padding: 1 2 1 2;
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#ffebeb, #ff6161), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ffc7c7 45.0%, #ff3d3d 50.0%);
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
+	-fx-padding: 1.0 2.0 1.0 2.0;
+	-fx-opacity: 1.0;
 }
 
 .indicatorOrange {
-	-fx-background-color: linear-gradient(#ff7d32, #ff7d32), radial-gradient(center 50% -40%, radius 200%, #ff7d32 45%, #ff7d32 50%);
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
-	-fx-padding: 1 2 1 2;
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#ff7d32, #ff7d32), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ff7d32 45.0%, #ff7d32 50.0%);
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
+	-fx-padding: 1.0 2.0 1.0 2.0;
+	-fx-opacity: 1.0;
 }
 
 /* SearchCON •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
 .layInFunction {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 0 0 0 0;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.3, 0, 0);
-	-fx-opacity: 1;
-	-fx-min-width: 15;
-	-fx-min-height: 15;
-	-fx-max-width: 15;
-	-fx-max-height: 15;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.3, 0.0, 0.0);
+	-fx-opacity: 1.0;
+	-fx-min-width: 15.0;
+	-fx-min-height: 15.0;
+	-fx-max-width: 15.0;
+	-fx-max-height: 15.0;
 }
 
 .cusrsorElmFocused {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-padding: 0 0 0 0;
-	-fx-opacity: 1;
-	-fx-min-height: 5;
-	-fx-min-width: 5;
-	-fx-max-height: 5;
-	-fx-max-width: 5;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-opacity: 1.0;
+	-fx-min-height: 5.0;
+	-fx-min-width: 5.0;
+	-fx-max-height: 5.0;
+	-fx-max-width: 5.0;
 }
 
 .cusrsorElmUnfocused {
 	-fx-background-color: #fafafa;
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-padding: 0 0 0 0;
-	-fx-opacity: 1;
-	-fx-min-height: 5;
-	-fx-min-width: 5;
-	-fx-max-height: 5;
-	-fx-max-width: 5;
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-padding: 0.0 0.0 0.0 0.0;
+	-fx-opacity: 1.0;
+	-fx-min-height: 5.0;
+	-fx-min-width: 5.0;
+	-fx-max-height: 5.0;
+	-fx-max-width: 5.0;
 }
 
 .inValues {
-	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.3, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.3, 0.0, 0.0);
+	-fx-opacity: 1.0;
 	-fx-text-fill: #708090;
 }
 
 
 .ACTIVE {
-	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-opacity: 1;
-	-fx-font-size: 10;
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
+	-fx-font-size: 10.0;
 }
 
 .UNACTIVE {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-opacity: 1;
-	-fx-font-size: 10;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
+	-fx-font-size: 10.0;
 }
 
 #list-Item-Gray {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-opacity: 1;
-	-fx-font-size: 10;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
+	-fx-font-size: 10.0;
 }
 
 #list-Item-Blue {
-	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-opacity: 1;
-	-fx-font-size: 10;
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
+	-fx-font-size: 10.0;
 }
 
 
@@ -185,271 +184,258 @@
 
 /** LIST */
 .list {
-	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 15 15 15 15;
-	-fx-background-radius: 15 15 15 15;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-padding: 25 5 25 5 ;
-	-fx-opacity: 1;
-	-fx-font-size: 10;
+	-fx-background-color: linear-gradient(#fff, #61c2ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-padding: 25.0 5.0 25.0 5.0 ;
+	-fx-opacity: 1.0;
+	-fx-font-size: 10.0;
 }
 
 /* Nnode •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
 .toNnode {
-	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 10, 0.5, 0, 0);
+	-fx-effect: dropshadow(three-pass-box, rgba(97.0, 194.0, 255.0, 0.7), 10.0, 0.5, 0.0, 0.0);
 }
 
 .unpopulatedNnode {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 4 4 4 4;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 1, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 4.0 4.0 4.0 4.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 1.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .externaNnodes {
 	-fx-border-color: gray;
 	-fx-border-style: dashed;
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 2 2 2 2;
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 2.0 2.0 2.0 2.0;
 }
 
 .unpopulatedNnodeWithSchemaJoins {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 4 4 4 4;
-	-fx-effect: dropshadow(three-pass-box, #145861, 5, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 4.0 4.0 4.0 4.0;
+	-fx-effect: dropshadow(three-pass-box, #145861, 5.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .configNnode {
-	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50% -40%, radius 200%, #ffefad 45%, #ffcf0f 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 4 4 4 4;
-	-fx-effect: dropshadow(three-pass-box, orange, 5, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ffefad 45.0%, #ffcf0f 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 4.0 4.0 4.0 4.0;
+	-fx-effect: dropshadow(three-pass-box, orange, 5.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 
 
 
 .externaljoinsOut {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
-	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 1, 0.2, 0, 0);
+	-fx-effect: dropshadow(three-pass-box, rgba(97.0, 194.0, 255.0, 0.7), 1.0, 0.2, 0.0, 0.0);
 	-fx-opacity: 0.9;
 }
 
 .externalNnode {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
 	-fx-opacity: 0.9;
 }
 
 .externalLaySQL {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
 	-fx-opacity: 0.9;
 }
 
 .externalLaySQLJ {
-	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f2ff 45.0%, #99ccff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.1, 0.0, 2.0);
 	-fx-opacity: 0.9;
 }
 
 .externalLaySQLD {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #f7f7f7 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #f7f7f7 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
 	-fx-opacity: 0.9;
 }
 
 .derivedjoins {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 9 9 9 9;
-	-fx-background-insets: 0, 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 9.0 9.0 9.0 9.0;
+	-fx-background-insets: 0.0, 1.0;
 	-fx-padding: 3.5 3.5 3.5 3.5 ;
-	-fx-effect: dropshadow(three-pass-box, rgba(255, 115, 97, 0.7), 1, 0.2, 0, 0);
+	-fx-effect: dropshadow(three-pass-box, rgba(255.0, 115.0, 97.0, 0.7), 1.0, 0.2, 0.0, 0.0);
 	-fx-opacity: 0.9;
 }
 
 
-/* LOGIC  •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
- * -fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 2, 0.2, 0, 0);*/
-.darklogic {
-	-fx-border-style: segments(10, 1, 10, 1);
-	-fx-border-width: 2 ;
-	-fx-border-color: white;
-	-fx-background-color: transparent;
-	-fx-border-radius: 10;
-	-fx-background-radius: 10;
-	-fx-padding: 2;
-	-fx-effect: dropshadow(gaussian, derive(#1E90FF, 20%) , 5, 0.1, 0.0, 0.0);
-}
-
 .logic {
-	-fx-border-style: segments(10, 1, 10, 1);
-	-fx-border-width: 2 ;
+	-fx-border-style: segments(10.0, 1.0, 10.0, 1.0);
+	-fx-border-width: 2.0;
 	-fx-border-color: white;
 	-fx-background-color: transparent;
-	-fx-border-radius: 10;
-	-fx-background-radius: 10;
-	-fx-padding: 2;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+	-fx-border-radius: 10.0;
+	-fx-background-radius: 10.0;
+	-fx-padding: 2.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .Open {
-	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #dbf1ff 45%, #ade0ff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-padding: 5 5 5 5;
+	-fx-background-color:  radial-gradient(center 50.0% -40.0%, radius 200.0%, #dbf1ff 45.0%, #ade0ff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
 }
 
 .Closed {
-	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #a8deff 45%, #75caff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-padding: 5 5 5 5;
+	-fx-background-color:  radial-gradient(center 50.0% -40.0%, radius 200.0%, #a8deff 45.0%, #75caff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
 }
 
 .Down {
-	-fx-background-color:  radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-padding: 5 5 5 5;
+	-fx-background-color:  radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
 }
 
 .OpenArc {
-	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, derive(#dbf1ff, 50.0%) 45%, derive(#ade0ff, 50.0%) 50%); 
-	-fx-stroke-width: 6px; -fx-fill: null; 
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, derive(#dbf1ff, 50.0%) 45.0%, derive(#ade0ff, 50.0%) 50.0%); 
+	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .ClosedArc {
-	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #a8deff 45%, #75caff 50%); 
-	-fx-stroke-width: 6px; -fx-fill: null; 
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, #a8deff 45.0%, #75caff 50.0%); 
+	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .DownArc {
-	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%); 
-	-fx-stroke-width: 6px; -fx-fill: null; 
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%); 
+	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .DownArcBackUp {
-	-fx-stroke: radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%); 
-	-fx-stroke-width: 6px; -fx-fill: null; 
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%); 
+	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .grayMenuSelector {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 5 5;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .blueMenuSelector {
-	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 5 5;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f2ff 45.0%, #99ccff 50.0%);
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 /* JoinCON */
 
 .joinBase {
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 5 5;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .joinBaseChild {
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 5 5;
-	-fx-effect: dropshadow(three-pass-box, white, 3, 0.4, 0, 0);
-	-fx-opacity: 1;
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
+	-fx-effect: dropshadow(three-pass-box, white, 3.0, 0.4, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 .SQLJ_JOIN {
-	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f2ff 45.0%, #99ccff 50.0%);
 }
 
 .SQLJ_LEFT {
-	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50% -40%, radius 200%, #efedf7 45%, #ebe5ff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #efedf7 45.0%, #ebe5ff 50.0%);
 }
 
 .SQLJ_RIGHT {
-	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50% -40%, radius 200%, #ffe5f2 45%, #ffd6eb 50%);
+	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ffe5f2 45.0%, #ffd6eb 50.0%);
 }
 
 .SQL_SHIFT {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
 }
 
 .SQLJ_SHIFT {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
 }
 
 
 .SQL_JOIN {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
 }
 
 
 
 .SQLD_JOIN {
-	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f2ff 45.0%, #99ccff 50.0%);
 }
 
 .SQLD_LEFT {
-	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50% -40%, radius 200%, #efedf7 45%, #ebe5ff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #9f7fff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #efedf7 45.0%, #ebe5ff 50.0%);
 }
 
 .SQLD_RIGHT {
-	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50% -40%, radius 200%, #ffe5f2 45%, #ffd6eb 50%);
+	-fx-background-color: linear-gradient(#ffffff, #ff8ac4), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ffe5f2 45.0%, #ffd6eb 50.0%);
 }
 
 .SQLD_SHIFT {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
 }
 
 
@@ -458,7 +444,7 @@
 -fx-background-position: center center; */
 .newSearchBar {
 	-fx-background-image: url("back.jpg");
-	-fx-padding: 15 0 15 0;
+	-fx-padding: 15.0 0.0 15.0 0.0;
 }
 
 
@@ -505,37 +491,37 @@
 */
 /*SQL Buttons */
 .SQLbtn {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #99ddff 50%);
-	-fx-border-radius: 15 3 3 15;
-	-fx-background-radius: 15 3 3 15;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #99ddff 50.0%);
+	-fx-border-radius: 15.0 3.0 3.0 15.0;
+	-fx-background-radius: 15.0 3.0 3.0 15.0;
 	-fx-padding: 4.5 4.5 4.5 4.5;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 	-fx-border-width: 0.5 ;
 	-fx-border-color: #b9baba;
 }
 
 .SQLJbtn {
-	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50% -40%, radius 200%, #e5f2ff 45%, #99ccff 50%);
-	-fx-border-radius: 15 3 3 15;
-	-fx-background-radius: 15 3 3 15;
+	-fx-background-color: linear-gradient(#ffffff, #7fbfff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f2ff 45.0%, #99ccff 50.0%);
+	-fx-border-radius: 15.0 3.0 3.0 15.0;
+	-fx-background-radius: 15.0 3.0 3.0 15.0;
 	-fx-padding: 4.5 4.5 4.5 4.5;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 	-fx-border-width: 0.5 ;
 	-fx-border-color: #b9baba;
 }
 
 .SQLJDbtn {
-	-fx-background-color: linear-gradient(#f3f9e0, #d4f963), radial-gradient(center 50% -40%, radius 200%, #edf9c7 45%, #daf97c 50%);
-	-fx-border-radius: 15 3 3 15;
-	-fx-background-radius: 15 3 3 15;
+	-fx-background-color: linear-gradient(#f3f9e0, #d4f963), radial-gradient(center 50.0% -40.0%, radius 200.0%, #edf9c7 45.0%, #daf97c 50.0%);
+	-fx-border-radius: 15.0 3.0 3.0 15.0;
+	-fx-background-radius: 15.0 3.0 3.0 15.0;
 	-fx-padding: 4.5 4.5 4.5 4.5;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 	-fx-border-width: 0.5 ;
 	-fx-border-color: #b9baba;
 }
@@ -543,13 +529,13 @@
 
 
 .testBtn {
-	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50% -40%, radius 200%, #ffefad 45%, #ffcf0f 50%);
-	-fx-border-radius: 2 2 2 2;
-	-fx-background-radius: 2 2 2 2;
+	-fx-background-color: linear-gradient(#fff5eb, #ffa061), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ffefad 45.0%, #ffcf0f 50.0%);
+	-fx-border-radius: 2.0 2.0 2.0 2.0;
+	-fx-background-radius: 2.0 2.0 2.0 2.0;
 	-fx-padding: 4.5 4.5 4.5 4.5;
-	-fx-background-insets: 0, 1;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.2, 0, 0);
-	-fx-opacity: 1;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 2.0, 0.2, 0.0, 0.0);
+	-fx-opacity: 1.0;
 }
 
 
@@ -596,8 +582,8 @@
 */
 .split-pane > .split-pane-divider {
 	-fx-background-color: transparent; /*   #ade0ff Set the background color of the separator */
-	-fx-background-insets: 0; /* Remove any padding around the separator */
-	-fx-padding: 0; /* Remove any padding inside the separator */
+	-fx-background-insets: 0.0; /* Remove any padding around the separator */
+	-fx-padding: 0.0; /* Remove any padding inside the separator */
 }
 
 
@@ -614,12 +600,12 @@
 
 
 .newList {
-	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50% -40%, radius 200%, #ededed 45%, #d1d1d1 50%);
-	-fx-border-radius: 10 10  2 2;
-	-fx-background-radius: 10 10  10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 20 5;
-	-fx-effect: dropshadow(three-pass-box, rgba(97, 194, 255, 0.7), 2, 0.2, 0, 0);
+	-fx-background-color: linear-gradient(#f0f0f0, #949494), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%);
+	-fx-border-radius: 10.0 10.0  2.0 2.0;
+	-fx-background-radius: 10.0 10.0  10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 20.0 5.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(97.0, 194.0, 255.0, 0.7), 2.0, 0.2, 0.0, 0.0);
 	-fx-opacity: 0.9;
 }
 
@@ -631,45 +617,45 @@ transition-duration: 0s;
 */
 
 .connectionLightBlue {
-	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50% -40%, radius 200%, #61c2ff 45%, #61c2ff 50%);
-	-fx-border-radius: 15 15 15 15;
-	-fx-background-radius: 15 15 15 15;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 3;
-	-fx-opacity: 1;
-	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2, 0.2, 0, 0);
-	-fx-min-height: 25;
-	-fx-max-height: 25;
+	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #61c2ff 45.0%, #61c2ff 50.0%);
+	-fx-border-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 3.0;
+	-fx-opacity: 1.0;
+	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2.0, 0.2, 0.0, 0.0);
+	-fx-min-height: 25.0;
+	-fx-max-height: 25.0;
 }
 
 .connectionLightOrange {
-	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50% -40%, radius 200%, #ff7d32 45%, #ff7d32 50%);
-	-fx-border-radius: 15 15 15 15;
-	-fx-background-radius: 15 15 15 15;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 3;
-	-fx-opacity: 1;
-	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2, 0.2, 0, 0);
-	-fx-min-height: 25;
-	-fx-max-height: 25;
+	-fx-background-color: linear-gradient(#fff, #fff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #ff7d32 45.0%, #ff7d32 50.0%);
+	-fx-border-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-radius: 15.0 15.0 15.0 15.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 3.0;
+	-fx-opacity: 1.0;
+	-fx-effect: dropshadow(three-pass-box, #61c2ff, 2.0, 0.2, 0.0, 0.0);
+	-fx-min-height: 25.0;
+	-fx-max-height: 25.0;
 }
 
 
 
 
 .upperLabel {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #d6f1ff 50%);
-	-fx-border-radius: 1 1 1 1;
-	-fx-background-radius: 1 1 1 1;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 5 5 5 5;
-	-fx-opacity: 1;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #d6f1ff 50.0%);
+	-fx-border-radius: 1.0 1.0 1.0 1.0;
+	-fx-background-radius: 1.0 1.0 1.0 1.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 5.0 5.0 5.0 5.0;
+	-fx-opacity: 1.0;
 }
 
 .titled-pane > .title {
-	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50% -40%, radius 200%, #e5f6ff 45%, #d6f1ff 50%);
-	-fx-background-insets: 0, 1, 2;
-	-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+	-fx-background-color: linear-gradient(#ffffff, #7fd4ff), radial-gradient(center 50.0% -40.0%, radius 200.0%, #e5f6ff 45.0%, #d6f1ff 50.0%);
+	-fx-background-insets: 0.0, 1.0, 2.0;
+	-fx-background-radius: 5.0 5.0 0.0 0.0, 4.0 4.0 0.0 0.0, 3.0 3.0 0.0 0.0;
 	-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
 }
 
@@ -677,12 +663,12 @@ transition-duration: 0s;
 
 /* LAY  ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
 .layBase {
-	-fx-border-radius: 10 10 10 10;
-	-fx-background-radius: 10 10 10 10;
-	-fx-background-insets: 0, 1;
-	-fx-padding: 4 4 1 4;
-	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 3, 0.1, 0, 2);
-	-fx-opacity: 1;	
+	-fx-border-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-radius: 10.0 10.0 10.0 10.0;
+	-fx-background-insets: 0.0, 1.0;
+	-fx-padding: 4.0 4.0 1.0 4.0;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.1, 0.0, 2.0);
+	-fx-opacity: 1.0;	
 }
 
 /* 	EDIT, VIEW, FORMULA, SQL,SQLJ, SQLD, SQLSELECTED, SQLJSELECTED,  SQLDSELECTED   #ff99cc 
@@ -726,20 +712,20 @@ transition-duration: 0s;
 /*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 
 .menu {
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
 }
 
 .menu-item {
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
 }
 
 .context-menu {
 	-fx-background-color: #fff;
 	-fx-opacity: 0.85;
-	-fx-border-radius: 3 3 3 3;
-	-fx-background-radius: 3 3 3 3;
+	-fx-border-radius: 3.0 3.0 3.0 3.0;
+	-fx-background-radius: 3.0 3.0 3.0 3.0;
 }
 
 .custom-menu-item {
@@ -965,14 +951,14 @@ transition-duration: 0s;
 .list-view .scroll-bar:vertical {
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-padding: -5 -10 -5 -10;
+	-fx-padding: -5.0 -10.0 -5.0 -10.0;
 	-fx-pref-width: 0.5px;
 }
 
 .list-view .scroll-bar:horizontal {
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-padding: -10 -5 -10, -5;
+	-fx-padding: -10.0 -5.0 -10.0, -5.0;
 	-fx-pref-height: 0.5px;
 }
 
@@ -994,9 +980,9 @@ transition-duration: 0s;
 .list-view  .scroll-bar .increment-arrow,
 .list-view  .scroll-bar .decrement-arrow {
 	-fx-shape: "";
-	-fx-padding: 0;
-	-fx-scale-x: 0;
-	-fx-scale-y: 0;
+	-fx-padding: 0.0;
+	-fx-scale-x: 0.0;
+	-fx-scale-y: 0.0;
 }
 
 
@@ -1012,18 +998,18 @@ transition-duration: 0s;
 -fx-effect: innershadow(three-pass-box, black, 0.5, 0.3, 0, 0);
 */  
 .scroll-pane .viewport {
-	-fx-background-color: rgba(0,0,0,0.0);
+	-fx-background-color: rgba(0.0,0.0,0.0,0.0);
 }
 
 .scroll-pane:focused, .split-pane:focused {
-	-fx-background-insets: 0, 1; /* This prevents from changing size on activate pane  horizontal*/
+	-fx-background-insets: 0.0, 1.0; /* This prevents from changing size on activate pane  horizontal*/
 }
 
 
 
 .thumb {
-	-fx-background-color: rgba(0,0,0, 0.1);
-	-fx-background-radius: 8;
+	-fx-background-color: rgba(0.0,0.0,0.0, 0.1);
+	-fx-background-radius: 8.0;
 	-fx-opacity: 0.8;
 }
 
@@ -1055,14 +1041,14 @@ transition-duration: 0s;
 .scroll-pane .scroll-bar:vertical {
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-padding: -5 -10 -5 -10;
+	-fx-padding: -5.0 -10.0 -5.0 -10.0;
 	-fx-pref-width: 0.5px;
 }
 
 .scroll-pane .scroll-bar:horizontal {
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-padding: -10 -5 -10, -5;
+	-fx-padding: -10.0 -5.0 -10.0, -5.0;
 	-fx-pref-height: 0.5px;
 }
 
@@ -1079,7 +1065,7 @@ transition-duration: 0s;
     -fx-background-color:
         -fx-outer-border,
         -fx-text-box-border,
-        linear-gradient(from 0px 0px to 0px 5px, -fx-text-box-border, derive(-fx-text-box-border, 30%));
+        linear-gradient(from 0.0px 0.0px to 0.0px 5.0px, -fx-text-box-border, derive(-fx-text-box-border, 30.0%));
 }
 
 .tab-pane > .tab-header-area > .tab-header-background {
@@ -1089,16 +1075,16 @@ transition-duration: 0s;
 	  *     -fx-background,  -fx-text-box-border,  linear-gradient(from 0.0px 0.0px to 0.0px 5.0px, -fx-text-box-border, derive(-fx-text-box-border, 30.0%));
 	  
 	   */
-	   -fx-padding: 0;
+	   -fx-padding: 0.0;
 	   -fx-background-color:  
 	   -fx-background,
         -fx-text-box-border,
-        rgb(234, 236, 241);
-   -fx-background-radius: 7 7 0 0;
+        -icalc-base;
+   -fx-background-radius: 7.0 7.0 0.0 0.0;
    
-   -fx-border-width: 2 2 0 2;
-   -fx-border-color: rgb(234, 236, 241);
-  -fx-border-radius: 7 7 0 0;
+   -fx-border-width: 2.0 2.0 0.0 2.0;
+   -fx-border-color: -icalc-base;
+  -fx-border-radius: 7.0 7.0 0.0 0.0;
    
 }
 
@@ -1107,14 +1093,14 @@ transition-duration: 0s;
 }
 
 .tab-pane:top > .tab-header-area > .tab-header-background {
-    -fx-background-insets: 0, 0 0 1 0, 1;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0, 1.0;
 }
 
 .tab-pane:top *.tab-header-area {
 	-fx-padding: 2.0px 0.0px 0.0px 20.0px;	
 }
 .tab-pane > .tab-header-area > .headers-region > .tab:top {
-    -fx-background-color: -fx-inner-border, -fx-background, rgb(234, 236, 241);
+    -fx-background-color: -fx-inner-border, -fx-background, -icalc-base;
 }
 
 .tab-pane {
@@ -1145,48 +1131,48 @@ transition-duration: 0s;
 .default-color5.chart-legend-item-symbol,
 .default-color6.chart-legend-item-symbol,
 .default-color7.chart-legend-item-symbol{
-    -fx-border-radius: 10 10 10 10;
-  	-fx-background-radius: 10 10 10 10;
-  	  	   -fx-padding: 8px;
+    -fx-border-radius: 10.0 10.0 10.0 10.0;
+  	-fx-background-radius: 10.0 10.0 10.0 10.0;
+  	  	   -fx-padding: 8.0px;
   	
 }
 
 
 .chart-legend {
    -fx-background-color: -fx-shadow-highlight-color,
-        linear-gradient(to bottom, derive(-fx-background, -10%), derive(-fx-background, -5%)),
-        linear-gradient(from 0px 0px to 0px 2px, derive(-fx-background, -4%), derive(-fx-background, 30%));
-   -fx-background-insets: 0 0 -1 0, 0,1;
-   -fx-background-radius: 15;
-   -fx-padding: 3px;
+        linear-gradient(to bottom, derive(-fx-background, -10.0%), derive(-fx-background, -5.0%)),
+        linear-gradient(from 0.0px 0.0px to 0.0px 2.0px, derive(-fx-background, -4.0%), derive(-fx-background, 30.0%));
+   -fx-background-insets: 0.0 0.0 -1.0 0.0, 0.0,1.0;
+   -fx-background-radius: 15.0;
+   -fx-padding: 3.0px;
 }
 
 .chartDarkX {
-	-fx-effect: dropshadow(gaussian, derive(#1E90FF, 40%) , 8, 0.2, 0.0, 0.0);
-	-fx-background-color: rgba(0, 0, 0, 0.5);
-	-fx-background-radius: 7;
-	-fx-border-radius: 7; 	
+	-fx-effect: dropshadow(gaussian, derive(#1E90FF, 40.0%) , 8.0, 0.2, 0.0, 0.0);
+	-fx-background-color: rgba(0.0, 0.0, 0.0, 0.5);
+	-fx-background-radius: 7.0;
+	-fx-border-radius: 7.0; 	
 	
-    -fx-background-insets: 5 0 5 5;
+    -fx-background-insets: 5.0 0.0 5.0 5.0;
     -fx-padding: 10.0px;
-    -fx-border-insets: 5 0 5 5;
+    -fx-border-insets: 5.0 0.0 5.0 5.0;
 	-fx-border-width: 0.5;
-	-fx-border-color: derive(#1E90FF, 50%);
+	-fx-border-color: derive(#1E90FF, 50.0%);
 }
 /*	-fx-effect:dropshadow(two-pass-box , white, 5, 0.4 , -2, -2);
  * -fx-border-color: white; 
 	-fx-border-width: 0.5;*/
 
 .chart {
-	-fx-background-color: rgb(234, 236, 241);
-	-fx-background-radius: 7;
-	-fx-border-radius: 7; 
+	-fx-background-color: -icalc-base;
+	-fx-background-radius: 7.0;
+	-fx-border-radius: 7.0; 
 	
-	-fx-effect:dropshadow(two-pass-box , white, 5, 0.4 , 0, 0);
+	-fx-effect:dropshadow(two-pass-box , white, 5.0, 0.4 , 0.0, 0.0);
 	
-    -fx-background-insets: 5 5 5 5;
+    -fx-background-insets: 5.0 5.0 5.0 5.0;
     -fx-padding: 10.0px;
-    -fx-border-insets: 5 5 5 5;	
+    -fx-border-insets: 5.0 5.0 5.0 5.0;	
 }
 
 .chart-plot-background {
@@ -1194,7 +1180,7 @@ transition-duration: 0s;
 }
 
 .chart-content {
-    -fx-padding: 5px;
+    -fx-padding: 5.0px;
 }
 
 
@@ -1213,18 +1199,18 @@ transition-duration: 0s;
 
 .chart-bar {
     -fx-background-color:  radial-gradient(center 50.0% -40.0%, radius 200.0%,  derive(-fx-bar-fill, 40.0%) 45.0%, -fx-bar-fill 50.0%); 
-    -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+    -fx-effect: dropshadow(two-pass-box , rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.0 , 0.0, 0.0);
   	-fx-background-insets: 0.0;
     -fx-border-radius: 7.0 7.0 0.0 0.0;
   	-fx-background-radius: 7.0 7.0 0.0 0.0;
 }
 
 .chart-bar.negative {
-    -fx-background-insets: 1 0 0 0;
+    -fx-background-insets: 1.0 0.0 0.0 0.0;
 }
 
 .bar-chart:horizontal .chart-bar {
-    -fx-background-insets: 0 0 0 1;
+    -fx-background-insets: 0.0 0.0 0.0 1.0;
 }
 
 
@@ -1246,16 +1232,16 @@ transition-duration: 0s;
 .chart-line-symbol {
 	
     -fx-background-color: #80B9FA, white;
-    -fx-background-insets: 0, 2;
-    -fx-background-radius: 5px;
-    -fx-padding: 5px;
-         -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+    -fx-background-insets: 0.0, 2.0;
+    -fx-background-radius: 5.0px;
+    -fx-padding: 5.0px;
+         -fx-effect: dropshadow(two-pass-box , rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.0 , 0.0, 0.0);
     
 }
 .chart-series-line {
     -fx-stroke: #80B9FA;
-    -fx-stroke-width: 3px;
-         -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 5, 0.0 , 0, 0);
+    -fx-stroke-width: 3.0px;
+         -fx-effect: dropshadow(two-pass-box , rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.0 , 0.0, 0.0);
     
 }
 .default-color0.chart-line-symbol { -fx-background-color: #80B9FA, white; }
@@ -1293,35 +1279,35 @@ transition-duration: 0s;
     -fx-background-color: -fx-box-border, -fx-inner-border, 
     linear-gradient(to bottom,
             ladder(
-                rgb(234, 236, 241),
-                derive(rgb(234, 236, 241),8%) 75%,
-                derive(rgb(234, 236, 241),10%) 80%
-            ),  derive(rgb(234, 236, 241),-8%));
+               -icalc-base,
+                derive(-icalc-base,8.0%) 75.0%,
+                derive(-icalc-base,10.0%) 80.0%
+            ),  derive(-icalc-base,-8.0%));
             
             
-    -fx-background-insets: 0, 0 1 1 0, 1 2 2 1;
+    -fx-background-insets: 0.0, 0.0 1.0 1.0 0.0, 1.0 2.0 2.0 1.0;
     -fx-font-weight: bold;
-    -fx-size: 2em;
+    -fx-size: 2.0em;
     -fx-text-fill: -fx-selection-bar-text;
     -fx-padding: 0.166667em;
 }
 
 
 .table-view > .virtual-flow > .scroll-bar:vertical {
-	-fx-background-color: rgba(0,0,0,0.01);
-	-fx-padding: -5 -10 -5 -10;
+	-fx-background-color: rgba(0.0,0.0,0.0,0.01);
+	-fx-padding: -5.0 -10.0 -5.0 -10.0;
 	-fx-pref-width: 0.5px;
 }
 
 .table-view > .virtual-flow > .scroll-bar:horizontal {
-	-fx-background-color: rgba(0,0,0,0.01);
-	-fx-padding: -10 -5 -10, -5;
+	-fx-background-color: rgba(0.0,0.0,0.0,0.01);
+	-fx-padding: -10.0 -5.0 -10.0, -5.0;
 	-fx-pref-height: 0.5px;
 }
 
 
 .table-view > .virtual-flow > .corner {
-	-fx-background-color: rgba(0,0,0,0.01);
+	-fx-background-color: rgba(0.0,0.0,0.0,0.01);
 }
 
 
@@ -1333,21 +1319,21 @@ transition-duration: 0s;
 	   -fx-background-color: -fx-box-border, -fx-inner-border, 
     linear-gradient(to bottom,
             ladder(
-                rgb(234, 236, 241),
-                derive(rgb(234, 236, 241),8%) 75%,
-                derive(rgb(234, 236, 241),10%) 80%
-            ),  derive(rgb(234, 236, 241),-8%));
+                -icalc-base,
+                derive(-icalc-base,8.0%) 75.0%,
+                derive(-icalc-base,10.0%) 80.0%
+            ),  derive(-icalc-base,-8.0%));
             
-    -fx-background-insets: 0, 0 1 1 0, 1 0 0 1;	
-	-fx-padding: 12 0 14 18;
-	-fx-translate-x: 10;
+    -fx-background-insets: 0.0, 0.0 1.0 1.0 0.0, 1.0 0.0 0.0 1.0;	
+	-fx-padding: 12.0 0.0 14.0 18.0;
+	-fx-translate-x: 10.0;
 	-fx-shape: "M10,10 L90,10 L90,90 L10,90 Z";
 }
 
 .table-view > .column-header-background > .show-hide-columns-button {
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-translate-x: -10px;
+	-fx-translate-x: -10.0px;
 }
 
 .scroll-bar > .increment-button:hover,
@@ -1358,29 +1344,29 @@ transition-duration: 0s;
 /* Text Area */
 .text-area{
     -fx-background-color: #fff, #fff;
-    -fx-background-radius: 7;
-    -fx-border-radius: 7;
+    -fx-background-radius: 7.0;
+    -fx-border-radius: 7.0;
     -fx-border-color: white;
-    -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.3), 10, 0.0 , 0, 0);   
-    -fx-padding: 5; 
+    -fx-effect: dropshadow(two-pass-box , rgba(0.0, 0.0, 0.0, 0.3), 10.0, 0.0 , 0.0, 0.0);   
+    -fx-padding: 5.0; 
 }
 
 .text-area .content {
     -fx-background-color: transparent;
-    -fx-background-radius: 7;
-    -fx-border-radius: 7;    
+    -fx-background-radius: 7.0;
+    -fx-border-radius: 7.0;    
 }
 
 .text-area:focused .content {
     -fx-background-color: transparent;
-    -fx-background-radius: 7;
-    -fx-border-radius: 7;
+    -fx-background-radius: 7.0;
+    -fx-border-radius: 7.0;
 }
 
 
 
 .tool-bar {
-    -fx-spacing: 10px; /* Adjust the value as per your preference */
+    -fx-spacing: 10.0px; /* Adjust the value as per your preference */
 }
 
 
@@ -1389,8 +1375,8 @@ transition-duration: 0s;
 	-fx-alignment: CENTER;
 	-fx-background-repeat: no-repeat;
     -fx-background-size: contain;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+    -fx-pref-width: 30.0px;
+    -fx-pref-height: 30.0px;
     
 }
 
@@ -1399,8 +1385,8 @@ transition-duration: 0s;
 	-fx-alignment: CENTER;
 	-fx-background-repeat: no-repeat;
     -fx-background-size: contain;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+    -fx-pref-width: 30.0px;
+    -fx-pref-height: 30.0px;
     
 }
 
@@ -1409,8 +1395,8 @@ transition-duration: 0s;
     -fx-alignment: bottom-center;
 	-fx-background-repeat: no-repeat;
     -fx-background-size: contain;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+    -fx-pref-width: 30.0px;
+    -fx-pref-height: 30.0px;
     
 }
 
@@ -1419,8 +1405,8 @@ transition-duration: 0s;
     -fx-alignment: bottom-center;
 	-fx-background-repeat: no-repeat;
     -fx-background-size: contain;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+    -fx-pref-width: 30.0px;
+    -fx-pref-height: 30.0px;
     
 }
 
@@ -1429,6 +1415,6 @@ transition-duration: 0s;
     -fx-alignment: bottom-center;
 	-fx-background-repeat: no-repeat;
     -fx-background-size: contain;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
+    -fx-pref-width: 30.0px;
+    -fx-pref-height: 30.0px;
 }

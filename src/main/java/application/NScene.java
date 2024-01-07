@@ -42,8 +42,8 @@ import javafx.scene.input.KeyCode;
 public class NScene extends Scene {
 	private static HashSet<String> currentKeys = new HashSet<String>();
 	private iCalc napp;
-    private String graphDark = getClass().getResource("/GraphDark.css").toExternalForm();//"/GraphDark.css";
-    private String graph = getClass().getResource("/Graph.css").toExternalForm();//"/GraphDark.css";
+    private String darkStyle = getClass().getResource("/GraphDark.css").toExternalForm();//"/GraphDark.css";
+    private String lightStyle = getClass().getResource("/Graph.css").toExternalForm();//"/Graph.css";
 
     
 	public NScene(Parent root, iCalc napp) {
@@ -51,9 +51,9 @@ public class NScene extends Scene {
 		this.napp = napp;
 		
 		if (napp.getMenu().getViewMenu().getGlassModeMenuItem().isSelected()) {
-			this.getStylesheets().add(graphDark);
+			this.getStylesheets().add(darkStyle);
 		}else {
-			this.getStylesheets().add(graph);
+			this.getStylesheets().add(lightStyle);
 		}
 	
         this.setOnKeyPressed(e -> {   
