@@ -43,7 +43,6 @@ import org.w3c.dom.Node;
 import activity.Select;
 import application.Indicators;
 import application.JoinLine;
-import application.NCircle;
 import application.XML;
 import clientcomponents.NKey;
 import elements.ELM;

@@ -333,19 +333,19 @@
 
 .OpenArc {
 	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, derive(#dbf1ff, 50.0%) 45.0%, derive(#ade0ff, 50.0%) 50.0%); 
-	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-stroke-width: 8.0px; -fx-fill: null; 
 	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .ClosedArc {
 	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, #a8deff 45.0%, #75caff 50.0%); 
-	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-stroke-width: 8.0px; -fx-fill: null; 
 	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 
 .DownArc {
 	-fx-stroke: radial-gradient(center 50.0% -40.0%, radius 200.0%, #ededed 45.0%, #d1d1d1 50.0%); 
-	-fx-stroke-width: 6.0px; -fx-fill: null; 
+	-fx-stroke-width: 8.0px; -fx-fill: null; 
 	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 4.0, 0.3, 0.0, 0.0);
 }
 

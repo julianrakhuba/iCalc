@@ -41,7 +41,6 @@ import org.w3c.dom.Node;
 
 import activity.Configure;
 import application.JoinLine;
-import application.NCircle;
 import application.NnodeLine;
 import application.XML;
 import clientcomponents.NColumn;
@@ -63,6 +62,7 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import layer.DLayer;
 import layer.LAY;
+import layer.NCircle;
 import layer.SLayer;
 import logic.SQL;
 import sidePanel.Message;

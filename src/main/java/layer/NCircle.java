@@ -29,7 +29,7 @@
  * You must obtain a separate commercial license if you wish to use this software for commercial purposes. 
  * Please contact me at 916-390-9979 or rakhuba@gmail.com for licensing information.
  *******************************************************************************/
-package application;
+package layer;
 
 import javafx.animation.Animation.Status;
 import javafx.animation.KeyFrame;
@@ -38,7 +38,6 @@ import javafx.animation.Timeline;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.util.Duration;
-import layer.LAY;
 import map.Nnode;
 
 public class NCircle extends Circle {
